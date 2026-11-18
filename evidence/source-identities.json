@@ -1,0 +1,75 @@
+{
+  "review_date": "2026-11-18",
+  "scope": "Pinned source and deployment metadata retrieved directly from the public upstream repositories. No deployed runtime bytecode or Explorer configuration was authenticated.",
+  "sources": [
+    {
+      "role": "USDr balanceOf",
+      "path": "crates/execution/evm/src/native_erc20/precompile.rs",
+      "url": "https://github.com/raylsnetwork/axyl/blob/7ea68c68671dde1fe71ea0b15b4dae67f4677e37/crates/execution/evm/src/native_erc20/precompile.rs",
+      "git_blob_sha1": "72a258bef50467411060db742ce13fbd970dd6d9"
+    },
+    {
+      "role": "Native-value event",
+      "path": "crates/execution/evm/src/native_erc20/inspector.rs",
+      "url": "https://github.com/raylsnetwork/axyl/blob/7ea68c68671dde1fe71ea0b15b4dae67f4677e37/crates/execution/evm/src/native_erc20/inspector.rs",
+      "git_blob_sha1": "9a16eef4114c342fed81465b25bd4981ee50f74d"
+    },
+    {
+      "role": "sendCredits value/refund logic",
+      "path": "packages/stg-evm-v2/src/messaging/CreditMessaging.sol",
+      "url": "https://github.com/stargate-protocol/stargate-v2/blob/348621c5430064e8d79445b8c1b8136fe3fbd967/packages/stg-evm-v2/src/messaging/CreditMessaging.sol",
+      "git_blob_sha1": "d5eeaa5d24e86598448b54a3a4b8f7ae8ba61e0a"
+    },
+    {
+      "role": "Rayls CreditMessaging deployment",
+      "path": "packages/stg-evm-v2/deployments/rayls-mainnet/CreditMessaging.json",
+      "url": "https://github.com/stargate-protocol/stargate-v2/blob/348621c5430064e8d79445b8c1b8136fe3fbd967/packages/stg-evm-v2/deployments/rayls-mainnet/CreditMessaging.json",
+      "git_blob_sha1": "178de2b2dbc7a60b7695bd256d5c25a5cc759614",
+      "published_address": "0x674843c06ff83502ddb4d37c2e09c01cda38cbc8"
+    },
+    {
+      "role": "Rayls StargateOFTUSDC deployment",
+      "path": "packages/stg-evm-v2/deployments/rayls-mainnet/StargateOFTUSDC.json",
+      "url": "https://github.com/stargate-protocol/stargate-v2/blob/348621c5430064e8d79445b8c1b8136fe3fbd967/packages/stg-evm-v2/deployments/rayls-mainnet/StargateOFTUSDC.json",
+      "git_blob_sha1": "7236ba327cf97296427a8c906c2a938ef74a5dca",
+      "published_address": "0x74c9f2b00581f1b11aa7ff05aa9f608b7389de67"
+    },
+    {
+      "role": "PacketV1Codec layout",
+      "path": "packages/layerzero-v2/evm/protocol/contracts/messagelib/libs/PacketV1Codec.sol",
+      "url": "https://github.com/LayerZero-Labs/LayerZero-v2/blob/9c741e7f9790639537b1710a203bcdfd73b0b9ac/packages/layerzero-v2/evm/protocol/contracts/messagelib/libs/PacketV1Codec.sol",
+      "git_blob_sha1": "2ae902b258df88d6e93759c06e5577d78a154b4b"
+    },
+    {
+      "role": "DVNFeePaid declaration",
+      "path": "packages/layerzero-v2/evm/messagelib/contracts/uln/SendUlnBase.sol",
+      "url": "https://github.com/LayerZero-Labs/LayerZero-v2/blob/9c741e7f9790639537b1710a203bcdfd73b0b9ac/packages/layerzero-v2/evm/messagelib/contracts/uln/SendUlnBase.sol",
+      "git_blob_sha1": "c1a20713cc1fea90f04010ea37c6be66aac37572"
+    },
+    {
+      "role": "ExecutorFeePaid declaration",
+      "path": "packages/layerzero-v2/evm/messagelib/contracts/SendLibBase.sol",
+      "url": "https://github.com/LayerZero-Labs/LayerZero-v2/blob/9c741e7f9790639537b1710a203bcdfd73b0b9ac/packages/layerzero-v2/evm/messagelib/contracts/SendLibBase.sol",
+      "git_blob_sha1": "7ba92419da72fd0b350d351b143292ee549f29ea"
+    },
+    {
+      "role": "Blockscout account RPC handler",
+      "path": "apps/block_scout_web/lib/block_scout_web/controllers/api/rpc/address_controller.ex",
+      "url": "https://github.com/blockscout/blockscout/blob/731015d88d7e73623f2a3c097e241bc82b04ea7a/apps/block_scout_web/lib/block_scout_web/controllers/api/rpc/address_controller.ex",
+      "git_blob_sha1": "56d1e9d4e3e5495455ce857b4362cf905981a15e"
+    },
+    {
+      "role": "Blockscout latest indexed balance by height",
+      "path": "apps/explorer/lib/explorer/etherscan/blocks.ex",
+      "url": "https://github.com/blockscout/blockscout/blob/731015d88d7e73623f2a3c097e241bc82b04ea7a/apps/explorer/lib/explorer/etherscan/blocks.ex",
+      "git_blob_sha1": "dfff0630040fd346c8d0a3f877de5496dd055c6e"
+    },
+    {
+      "role": "Rayls StargateOFTETH deployment",
+      "path": "packages/stg-evm-v2/deployments/rayls-mainnet/StargateOFTETH.json",
+      "url": "https://github.com/stargate-protocol/stargate-v2/blob/348621c5430064e8d79445b8c1b8136fe3fbd967/packages/stg-evm-v2/deployments/rayls-mainnet/StargateOFTETH.json",
+      "git_blob_sha1": "5d140041199620182d58f4c0da920b605bf49592",
+      "published_address": "0xad11a8beb98bbf61dbb1aa0f6d6f2ecd87b35afa"
+    }
+  ]
+}

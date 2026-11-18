@@ -1,0 +1,21 @@
+# Evidence map: Rayls USDr receipt study
+
+All values below are on Rayls Public Chain, chain ID 72957. The original Explorer material is preserved byte for byte under `original/`. The supplementary collection is direct JSON-RPC from the documented Rayls endpoint on 18 November 2026 UTC. Neither observation source is an authenticated state proof.
+
+| Claim | Replay or inspect | Scope |
+| --- | --- | --- |
+| The sampled native send recorded the same 4 USDr in Value and a USDr transfer log | `case-25` in [review summary](expected/review-summary.json); original `case-25-transaction.json` and `case-25-logs.json` | One native send. Do not count the records as two transfers. |
+| USDr `balanceOf` exposes the native balance | Axyl source in [source identities](evidence/source-identities.json), four account pairs in [RPC summary](expected/rpc-summary.json) | Exact (2 heights × 4 addresses) observations for one block; source read does not establish identical deployed bytecode. |
+| Worked caller debit is 2.603705590440678034 USDr | `case-01` in [routes](expected/route-audit.csv) and [RPC summary](expected/rpc-summary.json), original `bridge-01-logs.json` | Node-observed parent/block balances and one transaction in block; four paired balances agree. |
+| The saved State coin row differs from the caller debit by the refund | `hero` in [review summary](expected/review-summary.json), original `bridge-01-state-changes.json` and RPC | Arithmetic separates the projections in one example. No general claim about how the UI computes all State rows. |
+| Executor plus DVN fee entries equal the terminal transfer | [Route audit](expected/route-audit.csv) and saved raw logs | Matches amounts and emitter; does not attest when fee credits may be separately withdrawn. |
+| 23 distinct packet GUIDs across nine destination EIDs | [Route audit](expected/route-audit.csv): match source packet, calldata and `CreditsSent` | Destination execution not verified. 19 emission addresses match published StargateOFTUSDC and four match StargateOFTETH. |
+| Gross Value equals `floor(13 × message_fee / 10)` in each sampled call | [Route audit](expected/route-audit.csv), compare integer columns | Observed funding pattern of one payer. Not a pricing formula for Stargate or a user quote. |
+| 34/37 indexed account/block deltas matched; three exceptions stay visible | [Wallet balances](expected/wallet-balances.csv) and [lookup model](expected/history-height-model.csv) | Mix of 16 exact zero-deltas and 18 exact nonzero-deltas; indexed balances are not node state. |
+| The mint and following send reconcile only across the combined window | [Review summary](expected/review-summary.json), original `mint-to-transfer-coin-history.json` | The upstream Blockscout at-or-before lookup is consistent with four observed values. This does not identify the deployed Explorer configuration or resolve the exact state at the mint. |
+| The direct RPC matched 30 envelopes, 29 receipts, 214 logs, and 4 available historical pairs | [RPC summary](expected/rpc-summary.json) and [request batches](evidence/rpc) | One receipt returned null. The state pairs for 33 accounts/blocks were pruned. A comparison of data surfaces, not proof of separate provider operation. |
+| Zero Value occurs with a direct transfer, swap, approval and local funding mint | `special_wallet_examples` in [review summary](expected/review-summary.json) | Separate cases and signed amounts. The old direct transfer control’s data uses its original Explorer logs; the direct RPC receipt returned null. |
+
+In the main example, the separate gas fee consists of **0.015239088 USDr** base gas and **0.00670519872 USDr** priority gas. These two components already sum to the charged gas in the receipt. The study does not double count them as additional costs.
+
+For replay, start with [README](README.md). Figures use the rounded values tagged in [visuals/figures.json](visuals/figures.json); full precision stays in the underlying data.

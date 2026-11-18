@@ -1,0 +1,247 @@
+{
+  "scope": "Separate accounting calculations over one saved Explorer dataset; no node state attestation.",
+  "counts": {
+    "captured_json_responses": 132,
+    "sample_transfer_rows": 100,
+    "sample_transactions": 28,
+    "separate_controls": 2,
+    "logs_including_other_events": 215,
+    "credit_calls": 23,
+    "credit_payers": 1,
+    "packet_source_eids": [
+      30415
+    ],
+    "packet_destinations": [
+      30101,
+      30102,
+      30110,
+      30138,
+      30184,
+      30295,
+      30330,
+      30333,
+      30374
+    ],
+    "credit_emitters": {
+      "StargateOFTETH": 4,
+      "StargateOFTUSDC": 19
+    },
+    "unique_packet_guids": 23,
+    "isolated_blocks": 11,
+    "indexed_balance_pairs": 37,
+    "exact_pairs": 34,
+    "exact_zero_change_pairs": 16,
+    "exact_nonzero_pairs": 18,
+    "route_balance_pairs": 16
+  },
+  "sample_block_range": [
+    14669517,
+    14723934
+  ],
+  "aggregate": {
+    "gross_value_units": 58038097140136803951,
+    "refund_units": 13393407032339262445,
+    "message_fee_units": 44644690107797541506,
+    "gas_units": 506649530880000000,
+    "net_debit_units": 45151339638677541506,
+    "transfer_leg_sum_units": 174114291420410411853,
+    "aggregate_leg_sum_to_net_debit": "3.856238",
+    "ratio_min_median_max": [
+      "3.832199",
+      "3.850137",
+      "3.868137"
+    ]
+  },
+  "hero": {
+    "case_id": "case-01",
+    "hash": "0x29a651bbd3d52b4a6a961358870275113d5757468b476a885b7618ba87d5c4d2",
+    "height": 14723934,
+    "packet_version": 1,
+    "packet_nonce": 508,
+    "source_eid": 30415,
+    "packet_sender": "0x674843c06ff83502ddb4d37c2e09c01cda38cbc8",
+    "destination_eid": 30101,
+    "packet_receiver_bytes32": "0x0000000000000000000000009b4d17b45d60b8173a5904b85a7baaec291e9173",
+    "packet_guid": "0xe087162876aaf37ff101ad3b9dbf22b77b90b8d2af226037c6abf4f71639841a",
+    "packet_payload_bytes": 16,
+    "packet_send_library": "0xc39161c743d0307eb9bcc9fef03eeb9dc4802de7",
+    "payer": "0xe37f7c80ced04c4f243c0fd04a5510d663cb88b5",
+    "credit_messaging": "0x674843c06ff83502ddb4d37c2e09c01cda38cbc8",
+    "endpoint": "0x6f475642a6e85809b1c36fa62763669b1b48dd5b",
+    "send_library": "0xc39161c743d0307eb9bcc9fef03eeb9dc4802de7",
+    "credit_emitter": "0x74c9f2b00581f1b11aa7ff05aa9f608b7389de67",
+    "credit_asset_contract": "StargateOFTUSDC",
+    "gross_value_units": 3356289694836881444,
+    "refund_units": 774528391116203410,
+    "message_fee_units": 2581761303720678034,
+    "executor_address": "0x4208d6e27538189bb48e603d6123a94b8abe0a0b",
+    "executor_fee_units": 1532565805640508911,
+    "dvn_fee_units": 1049195498080169123,
+    "dvn_fee_entries": 3,
+    "gas_units": 21944286720000000,
+    "net_debit_units": 2603705590440678034,
+    "transfer_leg_sum_units": 10068869084510644332,
+    "value_minus_floor_13_over_10_fee_units": 0,
+    "leg_sum_to_net_debit": "3.867130",
+    "base_component_units": 15239088000000000,
+    "priority_component_units": 6705198720000000,
+    "indexed_wallet_delta_units": -2603705590440678034,
+    "state_tab_coin_delta_units": -3378233981556881444,
+    "state_tab_usdr_token_delta_units": -2581761303720678034,
+    "state_tab_coin_minus_indexed_units": -774528391116203410
+  },
+  "balance_exceptions": [
+    {
+      "case_id": "case-25",
+      "address": "0x2165b3dc1060123485fb20f1d59784b886874735",
+      "height": 14676417,
+      "before_units": 254455638976414746,
+      "after_units": 805907038976414746,
+      "log_net_less_gas_units": -4001209600000000000,
+      "explorer_delta_units": 551451400000000000,
+      "explorer_minus_expected_units": 4552661000000000000
+    },
+    {
+      "case_id": "case-26",
+      "address": "0x2165b3dc1060123485fb20f1d59784b886874735",
+      "height": 14676387,
+      "before_units": 254455638976414746,
+      "after_units": 254455638976414746,
+      "log_net_less_gas_units": 4552661000000000000,
+      "explorer_delta_units": 0,
+      "explorer_minus_expected_units": -4552661000000000000
+    },
+    {
+      "case_id": "control-transfer",
+      "address": "0x5eb12d076295cf23c44ed5d632d6b6a623e25592",
+      "height": 13187103,
+      "before_units": 5823450364984819,
+      "after_units": 5823450364984819,
+      "log_net_less_gas_units": 30000000000000000,
+      "explorer_delta_units": 0,
+      "explorer_minus_expected_units": -30000000000000000
+    }
+  ],
+  "funding_window_combined_units": 551451400000000000,
+  "history_lookup_model": [
+    {
+      "case_id": "case-26",
+      "lookup": "before",
+      "requested_height": 14676386,
+      "selected_history_height": 14646772,
+      "matches_at_or_before_model": true,
+      "balance_units": 254455638976414746
+    },
+    {
+      "case_id": "case-26",
+      "lookup": "after",
+      "requested_height": 14676387,
+      "selected_history_height": 14646772,
+      "matches_at_or_before_model": true,
+      "balance_units": 254455638976414746
+    },
+    {
+      "case_id": "case-25",
+      "lookup": "before",
+      "requested_height": 14676416,
+      "selected_history_height": 14646772,
+      "matches_at_or_before_model": true,
+      "balance_units": 254455638976414746
+    },
+    {
+      "case_id": "case-25",
+      "lookup": "after",
+      "requested_height": 14676417,
+      "selected_history_height": 14676417,
+      "matches_at_or_before_model": true,
+      "balance_units": 805907038976414746
+    }
+  ],
+  "special_wallet_examples": [
+    {
+      "case_id": "case-17",
+      "hash": "0x578c41d7ad11dd2befb48f87e5df881e2827d2f4dc4a879196b1b82083cf6a31",
+      "height": 14687910,
+      "top_value_units": 0,
+      "example": "swap",
+      "wallet": "0x00025d77f296c06803efd0de150ad1e10b56fb11",
+      "asset_movement_units": 41677112904045526158,
+      "wallet_usdr_delta_units": 41664703848045526158,
+      "wallet_fee_units": 12409056000000000,
+      "rls_out_units": 26255835650138935000000,
+      "explorer_delta_units": 41664703848045526158,
+      "explorer_delta_matches": true
+    },
+    {
+      "case_id": "case-25",
+      "hash": "0x4d39b36c5c4e12cdc79eccabffa3acd7e50213a3e651c39377d59de5e338ee80",
+      "height": 14676417,
+      "top_value_units": 4000000000000000000,
+      "example": "native-send",
+      "wallet": "0x2ed7120f6727ab95f1eb0e63581300716d79eadb",
+      "asset_movement_units": 4000000000000000000,
+      "wallet_usdr_delta_units": 4000000000000000000,
+      "wallet_fee_units": 0,
+      "explorer_delta_units": 4000000000000000000,
+      "explorer_delta_matches": true
+    },
+    {
+      "case_id": "case-26",
+      "hash": "0x253b1dbd4e53128070379ccb965fbe49679eaff90d0f2301cbeae50d3cd0d691",
+      "height": 14676387,
+      "top_value_units": 0,
+      "example": "funding-mint",
+      "wallet": "0x2165b3dc1060123485fb20f1d59784b886874735",
+      "asset_movement_units": 4552661000000000000,
+      "wallet_usdr_delta_units": 4552661000000000000,
+      "wallet_fee_units": 0,
+      "other_payer_gas_units": 9977610240000000,
+      "usdce_input_units": 4552661,
+      "compose_guid": "0x1da875ac692e5430fc4718a88b75a668552d71d67d889450914cbce583dbd23a",
+      "explorer_delta_units": 0,
+      "explorer_delta_matches": false
+    },
+    {
+      "case_id": "case-28",
+      "hash": "0x6a7592c43adea3e790d49893944dc11b696907823762f2a264f70088c4d663bb",
+      "height": 14669517,
+      "top_value_units": 0,
+      "example": "swap",
+      "wallet": "0x00025d77f296c06803efd0de150ad1e10b56fb11",
+      "asset_movement_units": 41181531439063221965,
+      "wallet_usdr_delta_units": 41169122095063221965,
+      "wallet_fee_units": 12409344000000000,
+      "rls_out_units": 25267958363566646000000,
+      "explorer_delta_units": 41169122095063221965,
+      "explorer_delta_matches": true
+    },
+    {
+      "case_id": "control-transfer",
+      "hash": "0x028c9c5af09b8500ed8f5dc781478b371049834ac463e978ce7904b133788f34",
+      "height": 13187103,
+      "top_value_units": 0,
+      "example": "wrapper-transfer",
+      "wallet": "0x8aceb267fae872049ffe96a740b5b0dc3a6ecf88",
+      "asset_movement_units": -30000000000000000,
+      "wallet_usdr_delta_units": -33695329382400000,
+      "wallet_fee_units": 3695329382400000,
+      "calldata_amount_units": 30000000000000000,
+      "explorer_delta_units": -33695329382400000,
+      "explorer_delta_matches": true
+    },
+    {
+      "case_id": "control-approve",
+      "hash": "0xeb5f28a300049fa08349847ce3614cc84ae25a878ae13b42a4e2303a43cb1145",
+      "height": 14669452,
+      "top_value_units": 0,
+      "example": "approval",
+      "wallet": "0x1569a4bb96f22b00eb07fb4d556bc1ee8e06b8ba",
+      "asset_movement_units": 0,
+      "wallet_usdr_delta_units": -1536076800000000,
+      "wallet_fee_units": 1536076800000000,
+      "calldata_amount_units": 50695390941874158052,
+      "explorer_delta_units": -1536076800000000,
+      "explorer_delta_matches": true
+    }
+  ]
+}

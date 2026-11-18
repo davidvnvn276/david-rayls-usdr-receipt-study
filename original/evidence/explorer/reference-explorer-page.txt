@@ -1,0 +1,25 @@
+Selected visible text from the reference transaction. This is a UI observation, not a JSON API response.
+Browser tab: 2, Title: "Rayls transaction 0x29a651bbd3d52b4a6a961358870275113d5757468b476a885b7618ba87d5c4d2 | Blockscout", URL: "https://explorer.rayls.com/tx/0x29a651bbd3d52b4a6a961358870275113d5757468b476a885b7618ba87d5c4d2".
+			48 heading Transaction details, Value: 1
+					57 tab (selectable, settable, boolean) Token transfers, Value: 0, ID: tabs:«rs»:trigger-token_transfers
+					71 text Success
+					72 text sendCredits
+					75 link Description: 14723934, Value: explorer.rayls.com/block/14723934
+						106 link Description: CreditMessaging, Value: explorer.rayls.com/address/0x674843C06FF83502ddb4D37c2E09C01cdA38cbc8
+						112 link Description: EndpointV2, Value: explorer.rayls.com/address/0x6F475642a6e85809B1c36Fa62763669b1b48DD5B
+						116 link Description: SendUln302, Value: explorer.rayls.com/address/0xC39161c743D0307EB9BCc9FEF03eeb9Dc4802de7
+						123 link Description: EndpointV2, Value: explorer.rayls.com/address/0x6F475642a6e85809B1c36Fa62763669b1b48DD5B
+						134 link Description: CreditMessaging, Value: explorer.rayls.com/address/0x674843C06FF83502ddb4D37c2E09C01cdA38cbc8
+						138 link Description: EndpointV2, Value: explorer.rayls.com/address/0x6F475642a6e85809B1c36Fa62763669b1b48DD5B
+						142 text 3.356289694836881444
+						149 link Description: CreditMessaging, Value: explorer.rayls.com/address/0x674843C06FF83502ddb4D37c2E09C01cdA38cbc8
+						153 text 3.356289694836881444
+					157 text Value
+					158 text 3.356289694836881444
+					159 text  USDr
+					161 text Transaction fee
+					162 text 0.02194428672
+					163 text  USDr
+					165 text Gas price
+					167 text  USDr (
+					172 text 317,481

@@ -1,0 +1,1943 @@
+{
+  "scope": "Direct official node replies, not cryptographic state proofs or an independently operated provider.",
+  "rpc_endpoint": "https://mainnet-rpc.rayls.com/",
+  "chain_id": 72957,
+  "reported_client_version": "1.4.3 (a8c0d0e9cf5493743052b1d267c295fd2a9866ea)",
+  "requests": 251,
+  "results_received": 118,
+  "nonresults_by_type": {
+    "null-result": 1,
+    "state-pruned": 132
+  },
+  "transaction_reads_verified": 30,
+  "receipts_verified": 29,
+  "event_logs_verified": 214,
+  "blocks_verified": 30,
+  "isolated_blocks_verified": 11,
+  "account_block_pairs": 37,
+  "complete_native_balance_pairs": 4,
+  "account_pairs_with_verified_alias": 4,
+  "account_pairs_with_rpc_event_match": 4,
+  "account_pairs_with_rpc_event_mismatch": 0,
+  "cases": [
+    {
+      "case_id": "case-01",
+      "transaction_hash": "0x29a651bbd3d52b4a6a961358870275113d5757468b476a885b7618ba87d5c4d2",
+      "height": 14723934,
+      "block_hash": "0x15b06065284526ae077a0f7bdbf382d657e0865e1719fd1f64a677eeab3572c1",
+      "transaction_verified": true,
+      "receipt_verified": true,
+      "event_logs_verified": 8,
+      "block_verified": true,
+      "isolated_parent_and_block_verified": true,
+      "unavailable_reads": []
+    },
+    {
+      "case_id": "case-02",
+      "transaction_hash": "0x091ceb6593f7bf292699a50548c51d52d5659c3e2a9bac0a8dac6f058c5d9e91",
+      "height": 14722378,
+      "block_hash": "0x7df1d627a3d95cec522691f67c55d051b435a0f04ee70e923639d8bae1dbc0c6",
+      "transaction_verified": true,
+      "receipt_verified": true,
+      "event_logs_verified": 8,
+      "block_verified": true,
+      "isolated_parent_and_block_verified": false,
+      "unavailable_reads": []
+    },
+    {
+      "case_id": "case-03",
+      "transaction_hash": "0xe6d8ae6874c88301144cfb323f636b250581b7dd1dc0ab98e47fae24b3ce90b9",
+      "height": 14722156,
+      "block_hash": "0x114daa9a11d3fa7d55665c265e4d0926c97ce0e382082b823e69895e4b597163",
+      "transaction_verified": true,
+      "receipt_verified": true,
+      "event_logs_verified": 8,
+      "block_verified": true,
+      "isolated_parent_and_block_verified": false,
+      "unavailable_reads": []
+    },
+    {
+      "case_id": "case-04",
+      "transaction_hash": "0xb4eb6c9b228fa72320814db45e70fe33cafcf533e4422bf91e103ba7952d7d6d",
+      "height": 14719924,
+      "block_hash": "0xe477684db88299d5aa99e69537f89620c05c90f717be104524eb0f64a299053e",
+      "transaction_verified": true,
+      "receipt_verified": true,
+      "event_logs_verified": 8,
+      "block_verified": true,
+      "isolated_parent_and_block_verified": false,
+      "unavailable_reads": []
+    },
+    {
+      "case_id": "case-05",
+      "transaction_hash": "0xcf6ddea2f3ef87be1d30704170f0b49a62725e256daf02328b82d7d54d5f7425",
+      "height": 14719033,
+      "block_hash": "0x189fc2a2df0901bd1b2eb75f18959fb300a636c7b75a4f6cfb1b1fb8d334a19c",
+      "transaction_verified": true,
+      "receipt_verified": true,
+      "event_logs_verified": 8,
+      "block_verified": true,
+      "isolated_parent_and_block_verified": false,
+      "unavailable_reads": []
+    },
+    {
+      "case_id": "case-06",
+      "transaction_hash": "0x6a02aca6afb71f7f0f2cf323d7bda431681f7d9ff2295950b027081624127a3b",
+      "height": 14718811,
+      "block_hash": "0x47f579072c8cda9936ea65a32b4d38dfaea18e2fe4757fae2c0b52b6cecb4cf7",
+      "transaction_verified": true,
+      "receipt_verified": true,
+      "event_logs_verified": 8,
+      "block_verified": true,
+      "isolated_parent_and_block_verified": false,
+      "unavailable_reads": []
+    },
+    {
+      "case_id": "case-07",
+      "transaction_hash": "0xe411dbe6a40a26af089d5a1ccb9d5868b04d57fe494bf163302e834ff7533d29",
+      "height": 14718587,
+      "block_hash": "0x5921e981a919954dc5d1b803c0b23958eca4c49710012afc4bd5bf93706af95f",
+      "transaction_verified": true,
+      "receipt_verified": true,
+      "event_logs_verified": 8,
+      "block_verified": true,
+      "isolated_parent_and_block_verified": false,
+      "unavailable_reads": []
+    },
+    {
+      "case_id": "case-08",
+      "transaction_hash": "0x78edf422479d8cb988c5e6ae9aceffa0bfcf6a26516fbf1153f332ed00640be8",
+      "height": 14718365,
+      "block_hash": "0x488e9d40341b80aec15211e25e3c3a7ca27b1ef200556b97cea330459d34b793",
+      "transaction_verified": true,
+      "receipt_verified": true,
+      "event_logs_verified": 8,
+      "block_verified": true,
+      "isolated_parent_and_block_verified": false,
+      "unavailable_reads": []
+    },
+    {
+      "case_id": "case-09",
+      "transaction_hash": "0x5fdd93a859c635f0cbc0bfa1ff26a9b9cb1e7f3eea1a7e03ba4327df0ff8e8fb",
+      "height": 14717921,
+      "block_hash": "0xe4ac1c631c128647c88698e6ad838b29d07c9acebc7c599893219bfbdcd52d40",
+      "transaction_verified": true,
+      "receipt_verified": true,
+      "event_logs_verified": 8,
+      "block_verified": true,
+      "isolated_parent_and_block_verified": false,
+      "unavailable_reads": []
+    },
+    {
+      "case_id": "case-10",
+      "transaction_hash": "0x703584b609b2e7e641a3e98a07b7a8427256bd2fa818fe4d0bc51c5d38683064",
+      "height": 14717697,
+      "block_hash": "0x9462cfd3fccac0df38055f847b05e8844693e6b8030364e5eaff1595cde7cf4a",
+      "transaction_verified": true,
+      "receipt_verified": true,
+      "event_logs_verified": 8,
+      "block_verified": true,
+      "isolated_parent_and_block_verified": false,
+      "unavailable_reads": []
+    },
+    {
+      "case_id": "case-11",
+      "transaction_hash": "0xe2a0fcb2316efa168f2e68312daf0260408e98f31b1af5ce1bd1ea605dfcdb93",
+      "height": 14717250,
+      "block_hash": "0xc8a39404192fbe2d6f0a06a7c81494a03c5a0a35e360b435effbb45046f041a3",
+      "transaction_verified": true,
+      "receipt_verified": true,
+      "event_logs_verified": 8,
+      "block_verified": true,
+      "isolated_parent_and_block_verified": false,
+      "unavailable_reads": []
+    },
+    {
+      "case_id": "case-12",
+      "transaction_hash": "0x929698ffe8aadef36602b11564cae7abcd8800ac118ce5a6dd44a15205da8965",
+      "height": 14717028,
+      "block_hash": "0x855c6ebd25e4c358d76f3dd5744c000994d39a9ff52d62f0eac92eef22388135",
+      "transaction_verified": true,
+      "receipt_verified": true,
+      "event_logs_verified": 8,
+      "block_verified": true,
+      "isolated_parent_and_block_verified": false,
+      "unavailable_reads": []
+    },
+    {
+      "case_id": "case-13",
+      "transaction_hash": "0x9be02a125cab9059e01211863bffac03d091e3ceac6f34456ae02b8a26b82c35",
+      "height": 14705232,
+      "block_hash": "0xfca9230ff1a73f5bb057de8083b0b4814bea1d0bfbaef13c5c11a3d8a8e11386",
+      "transaction_verified": true,
+      "receipt_verified": true,
+      "event_logs_verified": 8,
+      "block_verified": true,
+      "isolated_parent_and_block_verified": true,
+      "unavailable_reads": []
+    },
+    {
+      "case_id": "case-14",
+      "transaction_hash": "0x3cc942ce0c84a74c67d55c0fe771f4db5b370c020ed2169a20fee2e1e0169d69",
+      "height": 14697204,
+      "block_hash": "0xf5a8b76ef89fe3c17036f408ff8acd38789b005cbbd7c0a3af480ce1847490e0",
+      "transaction_verified": true,
+      "receipt_verified": true,
+      "event_logs_verified": 8,
+      "block_verified": true,
+      "isolated_parent_and_block_verified": true,
+      "unavailable_reads": []
+    },
+    {
+      "case_id": "case-15",
+      "transaction_hash": "0xd6d1dce4db1a17836331c28997a2246d77b84de97e3c869dcf5d88014f3a6c20",
+      "height": 14693196,
+      "block_hash": "0x81d1ee5e1e87e5a22629a53564e0d36714c319d47abd7a019947beb4d29bdf68",
+      "transaction_verified": true,
+      "receipt_verified": true,
+      "event_logs_verified": 8,
+      "block_verified": true,
+      "isolated_parent_and_block_verified": false,
+      "unavailable_reads": []
+    },
+    {
+      "case_id": "case-16",
+      "transaction_hash": "0xb7022a769541123754899a472bf9283868e65c19da06e9f4e62b9795beb6d514",
+      "height": 14690074,
+      "block_hash": "0xf90a6d181d82640135c4dfdda9c1c2ebe48a11072e1fd92fd5505a8695542ee9",
+      "transaction_verified": true,
+      "receipt_verified": true,
+      "event_logs_verified": 8,
+      "block_verified": true,
+      "isolated_parent_and_block_verified": false,
+      "unavailable_reads": []
+    },
+    {
+      "case_id": "case-17",
+      "transaction_hash": "0x578c41d7ad11dd2befb48f87e5df881e2827d2f4dc4a879196b1b82083cf6a31",
+      "height": 14687910,
+      "block_hash": "0x993c609a7695e1b23c19d480e41acc3699f33967db2043f0ca538a8077b684a4",
+      "transaction_verified": true,
+      "receipt_verified": true,
+      "event_logs_verified": 4,
+      "block_verified": true,
+      "isolated_parent_and_block_verified": true,
+      "unavailable_reads": []
+    },
+    {
+      "case_id": "case-18",
+      "transaction_hash": "0xdd7bb3863d8aa4176af9bab16efb8af82da0f41f67c44f1ca2f9bc7f5e56ea57",
+      "height": 14683607,
+      "block_hash": "0x6cda0c1b45c3d4a2826b4d3d32aabe7be191151340d4bb5f275adf40bf2cb11b",
+      "transaction_verified": true,
+      "receipt_verified": true,
+      "event_logs_verified": 8,
+      "block_verified": true,
+      "isolated_parent_and_block_verified": false,
+      "unavailable_reads": []
+    },
+    {
+      "case_id": "case-19",
+      "transaction_hash": "0xf68e45015eac4be19dce1b807b7a99b3a16851dd4253e9f95e42bafc25585052",
+      "height": 14680899,
+      "block_hash": "0xf467a2057bdc034dbb20a73c653eb44251493be0788fd09dccb526589276db0a",
+      "transaction_verified": true,
+      "receipt_verified": true,
+      "event_logs_verified": 8,
+      "block_verified": true,
+      "isolated_parent_and_block_verified": false,
+      "unavailable_reads": []
+    },
+    {
+      "case_id": "case-20",
+      "transaction_hash": "0x8b9c43e1df669078041014d0e3bc637153da386b04446e0256f271cf7fe08471",
+      "height": 14680450,
+      "block_hash": "0x73d6f4475416b90049fbacd3c825c1e9f47bbf421c765ea20e93b01529ed32e0",
+      "transaction_verified": true,
+      "receipt_verified": true,
+      "event_logs_verified": 8,
+      "block_verified": true,
+      "isolated_parent_and_block_verified": false,
+      "unavailable_reads": []
+    },
+    {
+      "case_id": "case-21",
+      "transaction_hash": "0x6b560f56b756a49bc7c11cecfd7d1d00f79fdd2a5c0e7c900e61f74c8070a8fe",
+      "height": 14679778,
+      "block_hash": "0x81472d95fcff45b0d55dc6200f99e6eed3264866df475fe00908db61e821c2c6",
+      "transaction_verified": true,
+      "receipt_verified": true,
+      "event_logs_verified": 8,
+      "block_verified": true,
+      "isolated_parent_and_block_verified": false,
+      "unavailable_reads": []
+    },
+    {
+      "case_id": "case-22",
+      "transaction_hash": "0x83011a1f2ae30fb65580b1417ae0dd4b0dd5dfe98d9100e39da3aafbc7a3a680",
+      "height": 14679776,
+      "block_hash": "0x051fbc718c0cf3e7971e7ac1e33bead039e673c0535db5221f77ffc9c3f02e5c",
+      "transaction_verified": true,
+      "receipt_verified": true,
+      "event_logs_verified": 8,
+      "block_verified": true,
+      "isolated_parent_and_block_verified": false,
+      "unavailable_reads": []
+    },
+    {
+      "case_id": "case-23",
+      "transaction_hash": "0xffcd5e34eed28e28a0ea99d67e6ac4c4b239f1184f214db88e00250dda7b47e6",
+      "height": 14678881,
+      "block_hash": "0x522591024d945115096b09893fece1f39ecc4c80c501e6e8f50840eaf5cd23a6",
+      "transaction_verified": true,
+      "receipt_verified": true,
+      "event_logs_verified": 8,
+      "block_verified": true,
+      "isolated_parent_and_block_verified": false,
+      "unavailable_reads": []
+    },
+    {
+      "case_id": "case-24",
+      "transaction_hash": "0xdecc3765d84c2cf0100b73fbaaefedda23208e3eaa8eb07157909c36feefdf29",
+      "height": 14676463,
+      "block_hash": "0x244d399799097cd66061983e9a23b4c6856841df2f8da9229f3f81d917594436",
+      "transaction_verified": true,
+      "receipt_verified": true,
+      "event_logs_verified": 13,
+      "block_verified": true,
+      "isolated_parent_and_block_verified": true,
+      "unavailable_reads": []
+    },
+    {
+      "case_id": "case-25",
+      "transaction_hash": "0x4d39b36c5c4e12cdc79eccabffa3acd7e50213a3e651c39377d59de5e338ee80",
+      "height": 14676417,
+      "block_hash": "0x330bea7610dda102c8160cf31d4035b619123f9fc60fa1bea728de628fad4524",
+      "transaction_verified": true,
+      "receipt_verified": true,
+      "event_logs_verified": 1,
+      "block_verified": true,
+      "isolated_parent_and_block_verified": true,
+      "unavailable_reads": []
+    },
+    {
+      "case_id": "case-26",
+      "transaction_hash": "0x253b1dbd4e53128070379ccb965fbe49679eaff90d0f2301cbeae50d3cd0d691",
+      "height": 14676387,
+      "block_hash": "0xadd98805a3c748a8c82b8b1bd4ec52e4bef81c9ad993e5fa851a04608340835b",
+      "transaction_verified": true,
+      "receipt_verified": true,
+      "event_logs_verified": 7,
+      "block_verified": true,
+      "isolated_parent_and_block_verified": true,
+      "unavailable_reads": []
+    },
+    {
+      "case_id": "case-27",
+      "transaction_hash": "0x8e126b25681195b0738d1546d5b4c9a4522bcc156b830c522c021d465a086d7c",
+      "height": 14675746,
+      "block_hash": "0x7e8cc8197de276fe173b8bb52e96fdb56309be3b940b7569f1a9a10e4b855ef5",
+      "transaction_verified": true,
+      "receipt_verified": true,
+      "event_logs_verified": 8,
+      "block_verified": true,
+      "isolated_parent_and_block_verified": true,
+      "unavailable_reads": []
+    },
+    {
+      "case_id": "case-28",
+      "transaction_hash": "0x6a7592c43adea3e790d49893944dc11b696907823762f2a264f70088c4d663bb",
+      "height": 14669517,
+      "block_hash": "0xbd4c630a8669062592532c7bce03459eb047a1b56588c32f80c0df98d2045e78",
+      "transaction_verified": true,
+      "receipt_verified": true,
+      "event_logs_verified": 4,
+      "block_verified": true,
+      "isolated_parent_and_block_verified": true,
+      "unavailable_reads": []
+    },
+    {
+      "case_id": "control-transfer",
+      "transaction_hash": "0x028c9c5af09b8500ed8f5dc781478b371049834ac463e978ce7904b133788f34",
+      "height": 13187103,
+      "block_hash": "0x4573e30d7fbb22fc5c313248314d26b3e5a1021a56b1eb700cf3bdf8b4405ddd",
+      "transaction_verified": true,
+      "receipt_verified": false,
+      "event_logs_verified": 0,
+      "block_verified": true,
+      "isolated_parent_and_block_verified": true,
+      "unavailable_reads": [
+        {
+          "id": 97,
+          "method": "eth_getTransactionReceipt",
+          "classification": "null-result",
+          "error_code": null,
+          "message": null
+        }
+      ]
+    },
+    {
+      "case_id": "control-approve",
+      "transaction_hash": "0xeb5f28a300049fa08349847ce3614cc84ae25a878ae13b42a4e2303a43cb1145",
+      "height": 14669452,
+      "block_hash": "0x4b1c01339a41c622f65f4913b310663816794fe49c3dae5321a14ec3d091a9f6",
+      "transaction_verified": true,
+      "receipt_verified": true,
+      "event_logs_verified": 1,
+      "block_verified": true,
+      "isolated_parent_and_block_verified": true,
+      "unavailable_reads": []
+    }
+  ],
+  "state_rows": [
+    {
+      "case_id": "case-01",
+      "address": "0xe37f7c80ced04c4f243c0fd04a5510d663cb88b5",
+      "height": 14723934,
+      "expected_delta_units": -2603705590440678034,
+      "explorer_delta_units": -2603705590440678034,
+      "native_before_units": 358315996176546923848,
+      "native_after_units": 355712290586106245814,
+      "precompile_before_units": 358315996176546923848,
+      "precompile_after_units": 355712290586106245814,
+      "unavailable_reads": [],
+      "base_block_anchored": true,
+      "alias_pair_verified": true,
+      "native_delta_units": -2603705590440678034,
+      "event_delta_matches_rpc": true
+    },
+    {
+      "case_id": "case-01",
+      "address": "0x674843c06ff83502ddb4d37c2e09c01cda38cbc8",
+      "height": 14723934,
+      "expected_delta_units": 0,
+      "explorer_delta_units": 0,
+      "native_before_units": 164335056194692250,
+      "native_after_units": 164335056194692250,
+      "precompile_before_units": 164335056194692250,
+      "precompile_after_units": 164335056194692250,
+      "unavailable_reads": [],
+      "base_block_anchored": true,
+      "alias_pair_verified": true,
+      "native_delta_units": 0,
+      "event_delta_matches_rpc": true
+    },
+    {
+      "case_id": "case-01",
+      "address": "0x6f475642a6e85809b1c36fa62763669b1b48dd5b",
+      "height": 14723934,
+      "expected_delta_units": 0,
+      "explorer_delta_units": 0,
+      "native_before_units": 0,
+      "native_after_units": 0,
+      "precompile_before_units": 0,
+      "precompile_after_units": 0,
+      "unavailable_reads": [],
+      "base_block_anchored": true,
+      "alias_pair_verified": true,
+      "native_delta_units": 0,
+      "event_delta_matches_rpc": true
+    },
+    {
+      "case_id": "case-01",
+      "address": "0xc39161c743d0307eb9bcc9fef03eeb9dc4802de7",
+      "height": 14723934,
+      "expected_delta_units": 2581761303720678034,
+      "explorer_delta_units": 2581761303720678034,
+      "native_before_units": 286774230743030347581,
+      "native_after_units": 289355992046751025615,
+      "precompile_before_units": 286774230743030347581,
+      "precompile_after_units": 289355992046751025615,
+      "unavailable_reads": [],
+      "base_block_anchored": true,
+      "alias_pair_verified": true,
+      "native_delta_units": 2581761303720678034,
+      "event_delta_matches_rpc": true
+    },
+    {
+      "case_id": "case-13",
+      "address": "0xe37f7c80ced04c4f243c0fd04a5510d663cb88b5",
+      "height": 14705232,
+      "expected_delta_units": -1271993549098709773,
+      "explorer_delta_units": -1271993549098709773,
+      "native_before_units": null,
+      "native_after_units": null,
+      "precompile_before_units": null,
+      "precompile_after_units": null,
+      "unavailable_reads": [
+        {
+          "id": 120,
+          "method": "eth_getBalance",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14705232 is pruned"
+        },
+        {
+          "id": 121,
+          "method": "eth_getBalance",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14705233 is pruned"
+        },
+        {
+          "id": 122,
+          "method": "eth_call",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14705232 is pruned"
+        },
+        {
+          "id": 123,
+          "method": "eth_call",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14705233 is pruned"
+        }
+      ],
+      "base_block_anchored": true,
+      "alias_pair_verified": null,
+      "native_delta_units": null,
+      "event_delta_matches_rpc": null
+    },
+    {
+      "case_id": "case-13",
+      "address": "0x674843c06ff83502ddb4d37c2e09c01cda38cbc8",
+      "height": 14705232,
+      "expected_delta_units": 0,
+      "explorer_delta_units": 0,
+      "native_before_units": null,
+      "native_after_units": null,
+      "precompile_before_units": null,
+      "precompile_after_units": null,
+      "unavailable_reads": [
+        {
+          "id": 124,
+          "method": "eth_getBalance",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14705232 is pruned"
+        },
+        {
+          "id": 125,
+          "method": "eth_getBalance",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14705233 is pruned"
+        },
+        {
+          "id": 126,
+          "method": "eth_call",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14705232 is pruned"
+        },
+        {
+          "id": 127,
+          "method": "eth_call",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14705233 is pruned"
+        }
+      ],
+      "base_block_anchored": true,
+      "alias_pair_verified": null,
+      "native_delta_units": null,
+      "event_delta_matches_rpc": null
+    },
+    {
+      "case_id": "case-13",
+      "address": "0x6f475642a6e85809b1c36fa62763669b1b48dd5b",
+      "height": 14705232,
+      "expected_delta_units": 0,
+      "explorer_delta_units": 0,
+      "native_before_units": null,
+      "native_after_units": null,
+      "precompile_before_units": null,
+      "precompile_after_units": null,
+      "unavailable_reads": [
+        {
+          "id": 128,
+          "method": "eth_getBalance",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14705232 is pruned"
+        },
+        {
+          "id": 129,
+          "method": "eth_getBalance",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14705233 is pruned"
+        },
+        {
+          "id": 130,
+          "method": "eth_call",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14705232 is pruned"
+        },
+        {
+          "id": 131,
+          "method": "eth_call",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14705233 is pruned"
+        }
+      ],
+      "base_block_anchored": true,
+      "alias_pair_verified": null,
+      "native_delta_units": null,
+      "event_delta_matches_rpc": null
+    },
+    {
+      "case_id": "case-13",
+      "address": "0xc39161c743d0307eb9bcc9fef03eeb9dc4802de7",
+      "height": 14705232,
+      "expected_delta_units": 1250049262378709773,
+      "explorer_delta_units": 1250049262378709773,
+      "native_before_units": null,
+      "native_after_units": null,
+      "precompile_before_units": null,
+      "precompile_after_units": null,
+      "unavailable_reads": [
+        {
+          "id": 132,
+          "method": "eth_getBalance",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14705232 is pruned"
+        },
+        {
+          "id": 133,
+          "method": "eth_getBalance",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14705233 is pruned"
+        },
+        {
+          "id": 134,
+          "method": "eth_call",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14705232 is pruned"
+        },
+        {
+          "id": 135,
+          "method": "eth_call",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14705233 is pruned"
+        }
+      ],
+      "base_block_anchored": true,
+      "alias_pair_verified": null,
+      "native_delta_units": null,
+      "event_delta_matches_rpc": null
+    },
+    {
+      "case_id": "case-14",
+      "address": "0xe37f7c80ced04c4f243c0fd04a5510d663cb88b5",
+      "height": 14697204,
+      "expected_delta_units": -1716349347288480000,
+      "explorer_delta_units": -1716349347288480000,
+      "native_before_units": null,
+      "native_after_units": null,
+      "precompile_before_units": null,
+      "precompile_after_units": null,
+      "unavailable_reads": [
+        {
+          "id": 136,
+          "method": "eth_getBalance",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14697204 is pruned"
+        },
+        {
+          "id": 137,
+          "method": "eth_getBalance",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14697205 is pruned"
+        },
+        {
+          "id": 138,
+          "method": "eth_call",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14697204 is pruned"
+        },
+        {
+          "id": 139,
+          "method": "eth_call",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14697205 is pruned"
+        }
+      ],
+      "base_block_anchored": true,
+      "alias_pair_verified": null,
+      "native_delta_units": null,
+      "event_delta_matches_rpc": null
+    },
+    {
+      "case_id": "case-14",
+      "address": "0x674843c06ff83502ddb4d37c2e09c01cda38cbc8",
+      "height": 14697204,
+      "expected_delta_units": 0,
+      "explorer_delta_units": 0,
+      "native_before_units": null,
+      "native_after_units": null,
+      "precompile_before_units": null,
+      "precompile_after_units": null,
+      "unavailable_reads": [
+        {
+          "id": 140,
+          "method": "eth_getBalance",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14697204 is pruned"
+        },
+        {
+          "id": 141,
+          "method": "eth_getBalance",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14697205 is pruned"
+        },
+        {
+          "id": 142,
+          "method": "eth_call",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14697204 is pruned"
+        },
+        {
+          "id": 143,
+          "method": "eth_call",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14697205 is pruned"
+        }
+      ],
+      "base_block_anchored": true,
+      "alias_pair_verified": null,
+      "native_delta_units": null,
+      "event_delta_matches_rpc": null
+    },
+    {
+      "case_id": "case-14",
+      "address": "0x6f475642a6e85809b1c36fa62763669b1b48dd5b",
+      "height": 14697204,
+      "expected_delta_units": 0,
+      "explorer_delta_units": 0,
+      "native_before_units": null,
+      "native_after_units": null,
+      "precompile_before_units": null,
+      "precompile_after_units": null,
+      "unavailable_reads": [
+        {
+          "id": 144,
+          "method": "eth_getBalance",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14697204 is pruned"
+        },
+        {
+          "id": 145,
+          "method": "eth_getBalance",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14697205 is pruned"
+        },
+        {
+          "id": 146,
+          "method": "eth_call",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14697204 is pruned"
+        },
+        {
+          "id": 147,
+          "method": "eth_call",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14697205 is pruned"
+        }
+      ],
+      "base_block_anchored": true,
+      "alias_pair_verified": null,
+      "native_delta_units": null,
+      "event_delta_matches_rpc": null
+    },
+    {
+      "case_id": "case-14",
+      "address": "0xc39161c743d0307eb9bcc9fef03eeb9dc4802de7",
+      "height": 14697204,
+      "expected_delta_units": 1694405060568480000,
+      "explorer_delta_units": 1694405060568480000,
+      "native_before_units": null,
+      "native_after_units": null,
+      "precompile_before_units": null,
+      "precompile_after_units": null,
+      "unavailable_reads": [
+        {
+          "id": 148,
+          "method": "eth_getBalance",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14697204 is pruned"
+        },
+        {
+          "id": 149,
+          "method": "eth_getBalance",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14697205 is pruned"
+        },
+        {
+          "id": 150,
+          "method": "eth_call",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14697204 is pruned"
+        },
+        {
+          "id": 151,
+          "method": "eth_call",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14697205 is pruned"
+        }
+      ],
+      "base_block_anchored": true,
+      "alias_pair_verified": null,
+      "native_delta_units": null,
+      "event_delta_matches_rpc": null
+    },
+    {
+      "case_id": "case-27",
+      "address": "0xe37f7c80ced04c4f243c0fd04a5510d663cb88b5",
+      "height": 14675746,
+      "expected_delta_units": -2685374944964093551,
+      "explorer_delta_units": -2685374944964093551,
+      "native_before_units": null,
+      "native_after_units": null,
+      "precompile_before_units": null,
+      "precompile_after_units": null,
+      "unavailable_reads": [
+        {
+          "id": 152,
+          "method": "eth_getBalance",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14675746 is pruned"
+        },
+        {
+          "id": 153,
+          "method": "eth_getBalance",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14675747 is pruned"
+        },
+        {
+          "id": 154,
+          "method": "eth_call",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14675746 is pruned"
+        },
+        {
+          "id": 155,
+          "method": "eth_call",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14675747 is pruned"
+        }
+      ],
+      "base_block_anchored": true,
+      "alias_pair_verified": null,
+      "native_delta_units": null,
+      "event_delta_matches_rpc": null
+    },
+    {
+      "case_id": "case-27",
+      "address": "0x674843c06ff83502ddb4d37c2e09c01cda38cbc8",
+      "height": 14675746,
+      "expected_delta_units": 0,
+      "explorer_delta_units": 0,
+      "native_before_units": null,
+      "native_after_units": null,
+      "precompile_before_units": null,
+      "precompile_after_units": null,
+      "unavailable_reads": [
+        {
+          "id": 156,
+          "method": "eth_getBalance",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14675746 is pruned"
+        },
+        {
+          "id": 157,
+          "method": "eth_getBalance",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14675747 is pruned"
+        },
+        {
+          "id": 158,
+          "method": "eth_call",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14675746 is pruned"
+        },
+        {
+          "id": 159,
+          "method": "eth_call",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14675747 is pruned"
+        }
+      ],
+      "base_block_anchored": true,
+      "alias_pair_verified": null,
+      "native_delta_units": null,
+      "event_delta_matches_rpc": null
+    },
+    {
+      "case_id": "case-27",
+      "address": "0x6f475642a6e85809b1c36fa62763669b1b48dd5b",
+      "height": 14675746,
+      "expected_delta_units": 0,
+      "explorer_delta_units": 0,
+      "native_before_units": null,
+      "native_after_units": null,
+      "precompile_before_units": null,
+      "precompile_after_units": null,
+      "unavailable_reads": [
+        {
+          "id": 160,
+          "method": "eth_getBalance",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14675746 is pruned"
+        },
+        {
+          "id": 161,
+          "method": "eth_getBalance",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14675747 is pruned"
+        },
+        {
+          "id": 162,
+          "method": "eth_call",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14675746 is pruned"
+        },
+        {
+          "id": 163,
+          "method": "eth_call",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14675747 is pruned"
+        }
+      ],
+      "base_block_anchored": true,
+      "alias_pair_verified": null,
+      "native_delta_units": null,
+      "event_delta_matches_rpc": null
+    },
+    {
+      "case_id": "case-27",
+      "address": "0xc39161c743d0307eb9bcc9fef03eeb9dc4802de7",
+      "height": 14675746,
+      "expected_delta_units": 2663435634884093551,
+      "explorer_delta_units": 2663435634884093551,
+      "native_before_units": null,
+      "native_after_units": null,
+      "precompile_before_units": null,
+      "precompile_after_units": null,
+      "unavailable_reads": [
+        {
+          "id": 164,
+          "method": "eth_getBalance",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14675746 is pruned"
+        },
+        {
+          "id": 165,
+          "method": "eth_getBalance",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14675747 is pruned"
+        },
+        {
+          "id": 166,
+          "method": "eth_call",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14675746 is pruned"
+        },
+        {
+          "id": 167,
+          "method": "eth_call",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14675747 is pruned"
+        }
+      ],
+      "base_block_anchored": true,
+      "alias_pair_verified": null,
+      "native_delta_units": null,
+      "event_delta_matches_rpc": null
+    },
+    {
+      "case_id": "case-17",
+      "address": "0x00025d77f296c06803efd0de150ad1e10b56fb11",
+      "height": 14687910,
+      "expected_delta_units": 41664703848045526158,
+      "explorer_delta_units": 41664703848045526158,
+      "native_before_units": null,
+      "native_after_units": null,
+      "precompile_before_units": null,
+      "precompile_after_units": null,
+      "unavailable_reads": [
+        {
+          "id": 168,
+          "method": "eth_getBalance",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14687910 is pruned"
+        },
+        {
+          "id": 169,
+          "method": "eth_getBalance",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14687911 is pruned"
+        },
+        {
+          "id": 170,
+          "method": "eth_call",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14687910 is pruned"
+        },
+        {
+          "id": 171,
+          "method": "eth_call",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14687911 is pruned"
+        }
+      ],
+      "base_block_anchored": true,
+      "alias_pair_verified": null,
+      "native_delta_units": null,
+      "event_delta_matches_rpc": null
+    },
+    {
+      "case_id": "case-17",
+      "address": "0x6d63b39017f379bfd0301293022581c6ef237a19",
+      "height": 14687910,
+      "expected_delta_units": 0,
+      "explorer_delta_units": 0,
+      "native_before_units": null,
+      "native_after_units": null,
+      "precompile_before_units": null,
+      "precompile_after_units": null,
+      "unavailable_reads": [
+        {
+          "id": 172,
+          "method": "eth_getBalance",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14687910 is pruned"
+        },
+        {
+          "id": 173,
+          "method": "eth_getBalance",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14687911 is pruned"
+        },
+        {
+          "id": 174,
+          "method": "eth_call",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14687910 is pruned"
+        },
+        {
+          "id": 175,
+          "method": "eth_call",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14687911 is pruned"
+        }
+      ],
+      "base_block_anchored": true,
+      "alias_pair_verified": null,
+      "native_delta_units": null,
+      "event_delta_matches_rpc": null
+    },
+    {
+      "case_id": "case-17",
+      "address": "0x07bebed47383e1bf3ec4f75eab2c65a0eff00fa1",
+      "height": 14687910,
+      "expected_delta_units": -41677112904045526158,
+      "explorer_delta_units": -41677112904045526158,
+      "native_before_units": null,
+      "native_after_units": null,
+      "precompile_before_units": null,
+      "precompile_after_units": null,
+      "unavailable_reads": [
+        {
+          "id": 176,
+          "method": "eth_getBalance",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14687910 is pruned"
+        },
+        {
+          "id": 177,
+          "method": "eth_getBalance",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14687911 is pruned"
+        },
+        {
+          "id": 178,
+          "method": "eth_call",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14687910 is pruned"
+        },
+        {
+          "id": 179,
+          "method": "eth_call",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14687911 is pruned"
+        }
+      ],
+      "base_block_anchored": true,
+      "alias_pair_verified": null,
+      "native_delta_units": null,
+      "event_delta_matches_rpc": null
+    },
+    {
+      "case_id": "case-24",
+      "address": "0x2ed7120f6727ab95f1eb0e63581300716d79eadb",
+      "height": 14676463,
+      "expected_delta_units": -2840803861969777037,
+      "explorer_delta_units": -2840803861969777037,
+      "native_before_units": null,
+      "native_after_units": null,
+      "precompile_before_units": null,
+      "precompile_after_units": null,
+      "unavailable_reads": [
+        {
+          "id": 180,
+          "method": "eth_getBalance",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14676463 is pruned"
+        },
+        {
+          "id": 181,
+          "method": "eth_getBalance",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14676464 is pruned"
+        },
+        {
+          "id": 182,
+          "method": "eth_call",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14676463 is pruned"
+        },
+        {
+          "id": 183,
+          "method": "eth_call",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14676464 is pruned"
+        }
+      ],
+      "base_block_anchored": true,
+      "alias_pair_verified": null,
+      "native_delta_units": null,
+      "event_delta_matches_rpc": null
+    },
+    {
+      "case_id": "case-24",
+      "address": "0xd4d9f3f737eb3c4feeffed511b64655fb956f911",
+      "height": 14676463,
+      "expected_delta_units": 0,
+      "explorer_delta_units": 0,
+      "native_before_units": null,
+      "native_after_units": null,
+      "precompile_before_units": null,
+      "precompile_after_units": null,
+      "unavailable_reads": [
+        {
+          "id": 184,
+          "method": "eth_getBalance",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14676463 is pruned"
+        },
+        {
+          "id": 185,
+          "method": "eth_getBalance",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14676464 is pruned"
+        },
+        {
+          "id": 186,
+          "method": "eth_call",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14676463 is pruned"
+        },
+        {
+          "id": 187,
+          "method": "eth_call",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14676464 is pruned"
+        }
+      ],
+      "base_block_anchored": true,
+      "alias_pair_verified": null,
+      "native_delta_units": null,
+      "event_delta_matches_rpc": null
+    },
+    {
+      "case_id": "case-24",
+      "address": "0x3147be1cd913fe9ea5df7505ffe704a8313b20b0",
+      "height": 14676463,
+      "expected_delta_units": 0,
+      "explorer_delta_units": 0,
+      "native_before_units": null,
+      "native_after_units": null,
+      "precompile_before_units": null,
+      "precompile_after_units": null,
+      "unavailable_reads": [
+        {
+          "id": 188,
+          "method": "eth_getBalance",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14676463 is pruned"
+        },
+        {
+          "id": 189,
+          "method": "eth_getBalance",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14676464 is pruned"
+        },
+        {
+          "id": 190,
+          "method": "eth_call",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14676463 is pruned"
+        },
+        {
+          "id": 191,
+          "method": "eth_call",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14676464 is pruned"
+        }
+      ],
+      "base_block_anchored": true,
+      "alias_pair_verified": null,
+      "native_delta_units": null,
+      "event_delta_matches_rpc": null
+    },
+    {
+      "case_id": "case-24",
+      "address": "0x6f475642a6e85809b1c36fa62763669b1b48dd5b",
+      "height": 14676463,
+      "expected_delta_units": 0,
+      "explorer_delta_units": 0,
+      "native_before_units": null,
+      "native_after_units": null,
+      "precompile_before_units": null,
+      "precompile_after_units": null,
+      "unavailable_reads": [
+        {
+          "id": 192,
+          "method": "eth_getBalance",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14676463 is pruned"
+        },
+        {
+          "id": 193,
+          "method": "eth_getBalance",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14676464 is pruned"
+        },
+        {
+          "id": 194,
+          "method": "eth_call",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14676463 is pruned"
+        },
+        {
+          "id": 195,
+          "method": "eth_call",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14676464 is pruned"
+        }
+      ],
+      "base_block_anchored": true,
+      "alias_pair_verified": null,
+      "native_delta_units": null,
+      "event_delta_matches_rpc": null
+    },
+    {
+      "case_id": "case-24",
+      "address": "0xc39161c743d0307eb9bcc9fef03eeb9dc4802de7",
+      "height": 14676463,
+      "expected_delta_units": 2818198396369777037,
+      "explorer_delta_units": 2818198396369777037,
+      "native_before_units": null,
+      "native_after_units": null,
+      "precompile_before_units": null,
+      "precompile_after_units": null,
+      "unavailable_reads": [
+        {
+          "id": 196,
+          "method": "eth_getBalance",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14676463 is pruned"
+        },
+        {
+          "id": 197,
+          "method": "eth_getBalance",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14676464 is pruned"
+        },
+        {
+          "id": 198,
+          "method": "eth_call",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14676463 is pruned"
+        },
+        {
+          "id": 199,
+          "method": "eth_call",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14676464 is pruned"
+        }
+      ],
+      "base_block_anchored": true,
+      "alias_pair_verified": null,
+      "native_delta_units": null,
+      "event_delta_matches_rpc": null
+    },
+    {
+      "case_id": "case-25",
+      "address": "0x2165b3dc1060123485fb20f1d59784b886874735",
+      "height": 14676417,
+      "expected_delta_units": -4001209600000000000,
+      "explorer_delta_units": 551451400000000000,
+      "native_before_units": null,
+      "native_after_units": null,
+      "precompile_before_units": null,
+      "precompile_after_units": null,
+      "unavailable_reads": [
+        {
+          "id": 200,
+          "method": "eth_getBalance",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14676417 is pruned"
+        },
+        {
+          "id": 201,
+          "method": "eth_getBalance",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14676418 is pruned"
+        },
+        {
+          "id": 202,
+          "method": "eth_call",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14676417 is pruned"
+        },
+        {
+          "id": 203,
+          "method": "eth_call",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14676418 is pruned"
+        }
+      ],
+      "base_block_anchored": true,
+      "alias_pair_verified": null,
+      "native_delta_units": null,
+      "event_delta_matches_rpc": null
+    },
+    {
+      "case_id": "case-25",
+      "address": "0x2ed7120f6727ab95f1eb0e63581300716d79eadb",
+      "height": 14676417,
+      "expected_delta_units": 4000000000000000000,
+      "explorer_delta_units": 4000000000000000000,
+      "native_before_units": null,
+      "native_after_units": null,
+      "precompile_before_units": null,
+      "precompile_after_units": null,
+      "unavailable_reads": [
+        {
+          "id": 204,
+          "method": "eth_getBalance",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14676417 is pruned"
+        },
+        {
+          "id": 205,
+          "method": "eth_getBalance",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14676418 is pruned"
+        },
+        {
+          "id": 206,
+          "method": "eth_call",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14676417 is pruned"
+        },
+        {
+          "id": 207,
+          "method": "eth_call",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14676418 is pruned"
+        }
+      ],
+      "base_block_anchored": true,
+      "alias_pair_verified": null,
+      "native_delta_units": null,
+      "event_delta_matches_rpc": null
+    },
+    {
+      "case_id": "case-26",
+      "address": "0xe93685f3bba03016f02bd1828badd6195988d950",
+      "height": 14676387,
+      "expected_delta_units": -9977610240000000,
+      "explorer_delta_units": -9977610240000000,
+      "native_before_units": null,
+      "native_after_units": null,
+      "precompile_before_units": null,
+      "precompile_after_units": null,
+      "unavailable_reads": [
+        {
+          "id": 208,
+          "method": "eth_getBalance",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14676387 is pruned"
+        },
+        {
+          "id": 209,
+          "method": "eth_getBalance",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14676388 is pruned"
+        },
+        {
+          "id": 210,
+          "method": "eth_call",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14676387 is pruned"
+        },
+        {
+          "id": 211,
+          "method": "eth_call",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14676388 is pruned"
+        }
+      ],
+      "base_block_anchored": true,
+      "alias_pair_verified": null,
+      "native_delta_units": null,
+      "event_delta_matches_rpc": null
+    },
+    {
+      "case_id": "case-26",
+      "address": "0x4208d6e27538189bb48e603d6123a94b8abe0a0b",
+      "height": 14676387,
+      "expected_delta_units": 0,
+      "explorer_delta_units": 0,
+      "native_before_units": null,
+      "native_after_units": null,
+      "precompile_before_units": null,
+      "precompile_after_units": null,
+      "unavailable_reads": [
+        {
+          "id": 212,
+          "method": "eth_getBalance",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14676387 is pruned"
+        },
+        {
+          "id": 213,
+          "method": "eth_getBalance",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14676388 is pruned"
+        },
+        {
+          "id": 214,
+          "method": "eth_call",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14676387 is pruned"
+        },
+        {
+          "id": 215,
+          "method": "eth_call",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14676388 is pruned"
+        }
+      ],
+      "base_block_anchored": true,
+      "alias_pair_verified": null,
+      "native_delta_units": null,
+      "event_delta_matches_rpc": null
+    },
+    {
+      "case_id": "case-26",
+      "address": "0x2165b3dc1060123485fb20f1d59784b886874735",
+      "height": 14676387,
+      "expected_delta_units": 4552661000000000000,
+      "explorer_delta_units": 0,
+      "native_before_units": null,
+      "native_after_units": null,
+      "precompile_before_units": null,
+      "precompile_after_units": null,
+      "unavailable_reads": [
+        {
+          "id": 216,
+          "method": "eth_getBalance",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14676387 is pruned"
+        },
+        {
+          "id": 217,
+          "method": "eth_getBalance",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14676388 is pruned"
+        },
+        {
+          "id": 218,
+          "method": "eth_call",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14676387 is pruned"
+        },
+        {
+          "id": 219,
+          "method": "eth_call",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14676388 is pruned"
+        }
+      ],
+      "base_block_anchored": true,
+      "alias_pair_verified": null,
+      "native_delta_units": null,
+      "event_delta_matches_rpc": null
+    },
+    {
+      "case_id": "case-28",
+      "address": "0x00025d77f296c06803efd0de150ad1e10b56fb11",
+      "height": 14669517,
+      "expected_delta_units": 41169122095063221965,
+      "explorer_delta_units": 41169122095063221965,
+      "native_before_units": null,
+      "native_after_units": null,
+      "precompile_before_units": null,
+      "precompile_after_units": null,
+      "unavailable_reads": [
+        {
+          "id": 220,
+          "method": "eth_getBalance",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14669517 is pruned"
+        },
+        {
+          "id": 221,
+          "method": "eth_getBalance",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14669518 is pruned"
+        },
+        {
+          "id": 222,
+          "method": "eth_call",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14669517 is pruned"
+        },
+        {
+          "id": 223,
+          "method": "eth_call",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14669518 is pruned"
+        }
+      ],
+      "base_block_anchored": true,
+      "alias_pair_verified": null,
+      "native_delta_units": null,
+      "event_delta_matches_rpc": null
+    },
+    {
+      "case_id": "case-28",
+      "address": "0x6d63b39017f379bfd0301293022581c6ef237a19",
+      "height": 14669517,
+      "expected_delta_units": 0,
+      "explorer_delta_units": 0,
+      "native_before_units": null,
+      "native_after_units": null,
+      "precompile_before_units": null,
+      "precompile_after_units": null,
+      "unavailable_reads": [
+        {
+          "id": 224,
+          "method": "eth_getBalance",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14669517 is pruned"
+        },
+        {
+          "id": 225,
+          "method": "eth_getBalance",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14669518 is pruned"
+        },
+        {
+          "id": 226,
+          "method": "eth_call",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14669517 is pruned"
+        },
+        {
+          "id": 227,
+          "method": "eth_call",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14669518 is pruned"
+        }
+      ],
+      "base_block_anchored": true,
+      "alias_pair_verified": null,
+      "native_delta_units": null,
+      "event_delta_matches_rpc": null
+    },
+    {
+      "case_id": "case-28",
+      "address": "0x07bebed47383e1bf3ec4f75eab2c65a0eff00fa1",
+      "height": 14669517,
+      "expected_delta_units": -41181531439063221965,
+      "explorer_delta_units": -41181531439063221965,
+      "native_before_units": null,
+      "native_after_units": null,
+      "precompile_before_units": null,
+      "precompile_after_units": null,
+      "unavailable_reads": [
+        {
+          "id": 228,
+          "method": "eth_getBalance",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14669517 is pruned"
+        },
+        {
+          "id": 229,
+          "method": "eth_getBalance",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14669518 is pruned"
+        },
+        {
+          "id": 230,
+          "method": "eth_call",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14669517 is pruned"
+        },
+        {
+          "id": 231,
+          "method": "eth_call",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14669518 is pruned"
+        }
+      ],
+      "base_block_anchored": true,
+      "alias_pair_verified": null,
+      "native_delta_units": null,
+      "event_delta_matches_rpc": null
+    },
+    {
+      "case_id": "control-transfer",
+      "address": "0x8aceb267fae872049ffe96a740b5b0dc3a6ecf88",
+      "height": 13187103,
+      "expected_delta_units": -33695329382400000,
+      "explorer_delta_units": -33695329382400000,
+      "native_before_units": null,
+      "native_after_units": null,
+      "precompile_before_units": null,
+      "precompile_after_units": null,
+      "unavailable_reads": [
+        {
+          "id": 232,
+          "method": "eth_getBalance",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #13187103 is pruned"
+        },
+        {
+          "id": 233,
+          "method": "eth_getBalance",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #13187104 is pruned"
+        },
+        {
+          "id": 234,
+          "method": "eth_call",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #13187103 is pruned"
+        },
+        {
+          "id": 235,
+          "method": "eth_call",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #13187104 is pruned"
+        }
+      ],
+      "base_block_anchored": true,
+      "alias_pair_verified": null,
+      "native_delta_units": null,
+      "event_delta_matches_rpc": null
+    },
+    {
+      "case_id": "control-transfer",
+      "address": "0x0000000000000000000000000000000000000400",
+      "height": 13187103,
+      "expected_delta_units": 0,
+      "explorer_delta_units": 0,
+      "native_before_units": null,
+      "native_after_units": null,
+      "precompile_before_units": null,
+      "precompile_after_units": null,
+      "unavailable_reads": [
+        {
+          "id": 236,
+          "method": "eth_getBalance",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #13187103 is pruned"
+        },
+        {
+          "id": 237,
+          "method": "eth_getBalance",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #13187104 is pruned"
+        },
+        {
+          "id": 238,
+          "method": "eth_call",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #13187103 is pruned"
+        },
+        {
+          "id": 239,
+          "method": "eth_call",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #13187104 is pruned"
+        }
+      ],
+      "base_block_anchored": true,
+      "alias_pair_verified": null,
+      "native_delta_units": null,
+      "event_delta_matches_rpc": null
+    },
+    {
+      "case_id": "control-transfer",
+      "address": "0x5eb12d076295cf23c44ed5d632d6b6a623e25592",
+      "height": 13187103,
+      "expected_delta_units": 30000000000000000,
+      "explorer_delta_units": 0,
+      "native_before_units": null,
+      "native_after_units": null,
+      "precompile_before_units": null,
+      "precompile_after_units": null,
+      "unavailable_reads": [
+        {
+          "id": 240,
+          "method": "eth_getBalance",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #13187103 is pruned"
+        },
+        {
+          "id": 241,
+          "method": "eth_getBalance",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #13187104 is pruned"
+        },
+        {
+          "id": 242,
+          "method": "eth_call",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #13187103 is pruned"
+        },
+        {
+          "id": 243,
+          "method": "eth_call",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #13187104 is pruned"
+        }
+      ],
+      "base_block_anchored": true,
+      "alias_pair_verified": null,
+      "native_delta_units": null,
+      "event_delta_matches_rpc": null
+    },
+    {
+      "case_id": "control-approve",
+      "address": "0x1569a4bb96f22b00eb07fb4d556bc1ee8e06b8ba",
+      "height": 14669452,
+      "expected_delta_units": -1536076800000000,
+      "explorer_delta_units": -1536076800000000,
+      "native_before_units": null,
+      "native_after_units": null,
+      "precompile_before_units": null,
+      "precompile_after_units": null,
+      "unavailable_reads": [
+        {
+          "id": 244,
+          "method": "eth_getBalance",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14669452 is pruned"
+        },
+        {
+          "id": 245,
+          "method": "eth_getBalance",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14669453 is pruned"
+        },
+        {
+          "id": 246,
+          "method": "eth_call",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14669452 is pruned"
+        },
+        {
+          "id": 247,
+          "method": "eth_call",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14669453 is pruned"
+        }
+      ],
+      "base_block_anchored": true,
+      "alias_pair_verified": null,
+      "native_delta_units": null,
+      "event_delta_matches_rpc": null
+    },
+    {
+      "case_id": "control-approve",
+      "address": "0x0000000000000000000000000000000000000400",
+      "height": 14669452,
+      "expected_delta_units": 0,
+      "explorer_delta_units": 0,
+      "native_before_units": null,
+      "native_after_units": null,
+      "precompile_before_units": null,
+      "precompile_after_units": null,
+      "unavailable_reads": [
+        {
+          "id": 248,
+          "method": "eth_getBalance",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14669452 is pruned"
+        },
+        {
+          "id": 249,
+          "method": "eth_getBalance",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14669453 is pruned"
+        },
+        {
+          "id": 250,
+          "method": "eth_call",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14669452 is pruned"
+        },
+        {
+          "id": 251,
+          "method": "eth_call",
+          "classification": "state-pruned",
+          "error_code": -32603,
+          "message": "state at block #14669453 is pruned"
+        }
+      ],
+      "base_block_anchored": true,
+      "alias_pair_verified": null,
+      "native_delta_units": null,
+      "event_delta_matches_rpc": null
+    }
+  ]
+}

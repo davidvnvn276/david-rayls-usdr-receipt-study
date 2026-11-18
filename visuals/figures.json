@@ -1,0 +1,34 @@
+[
+  {
+    "filename": "00-cover-usdr",
+    "width": 2500,
+    "height": 1000,
+    "title": "What did the wallet spend in USDr?",
+    "alt": "One Rayls receipt: 3.356290 USDr Value, 10.068869 USDr across four transfer logs, and 2.603706 USDr wallet debit after refund and gas.",
+    "placement": "Binance Square cover field"
+  },
+  {
+    "filename": "01-usdr-refund-route",
+    "width": 2400,
+    "height": 1350,
+    "title": "Follow the USDr refund",
+    "alt": "Caller sends 3.356290 USDr to CreditMessaging, which forwards it to EndpointV2. EndpointV2 sends 2.581761 to the send library and refunds 0.774528 to the caller. Adding 0.021944 gas produces a wallet debit of 2.603706 USDr.",
+    "placement": "After: How did 3.356290 USDr become a 2.603706 USDr debit?"
+  },
+  {
+    "filename": "02-usdr-value-examples",
+    "width": 2400,
+    "height": 1440,
+    "title": "What moved in the receipt?",
+    "alt": "A four-USDr native send is reflected in both Value and one log. At zero Value, observed examples include a 0.03 USDr direct transfer, a swap credit, a gas-only approval, and a local gas funding mint.",
+    "placement": "After: What can move when the Value field is zero?"
+  },
+  {
+    "filename": "03-usdr-evidence-coverage",
+    "width": 2400,
+    "height": 1410,
+    "title": "How far did the check go?",
+    "alt": "23 of 23 routes from one sending wallet reconciled with 174.114291 USDr in transfer-leg volume and 45.151340 USDr in calculated wallet debits. The RPC matched 29 receipts and 214 logs. Four of 37 state pairs were available and all four matched.",
+    "placement": "After: Which balance evidence was available?"
+  }
+]

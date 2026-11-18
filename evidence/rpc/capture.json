@@ -1,0 +1,7 @@
+{
+  "endpoint": "https://mainnet-rpc.rayls.com/",
+  "chain_id_requested": 72957,
+  "scope": "Direct JSON-RPC query path; provider operation is not established as independent of Explorer.",
+  "batches": 22,
+  "requests": 251
+}

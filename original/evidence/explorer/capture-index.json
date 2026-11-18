@@ -1,0 +1,1252 @@
+{
+  "schema_version": 1,
+  "sample": "First two contiguous pages of USD Rayls token transfers. Each distinct transaction has a logs response. For sendCredits use destination contract transaction history, otherwise transaction detail. Account checks cover first/last complete sendCredits on each UTC date, every other corpus transaction, and both targeted controls.",
+  "network": "Rayls Public Chain mainnet",
+  "chain_id_documented": 72957,
+  "transfer_token": "0x0000000000000000000000000000000000000400",
+  "case_records": [
+    {
+      "id": "case-01",
+      "hash": "0x29a651bbd3d52b4a6a961358870275113d5757468b476a885b7618ba87d5c4d2",
+      "block": 14723934,
+      "method": "sendCredits",
+      "utc": "2026-11-18T08:40:05.000000Z"
+    },
+    {
+      "id": "case-02",
+      "hash": "0x091ceb6593f7bf292699a50548c51d52d5659c3e2a9bac0a8dac6f058c5d9e91",
+      "block": 14722378,
+      "method": "sendCredits",
+      "utc": "2026-11-18T08:05:05.000000Z"
+    },
+    {
+      "id": "case-03",
+      "hash": "0xe6d8ae6874c88301144cfb323f636b250581b7dd1dc0ab98e47fae24b3ce90b9",
+      "block": 14722156,
+      "method": "sendCredits",
+      "utc": "2026-11-18T08:00:06.000000Z"
+    },
+    {
+      "id": "case-04",
+      "hash": "0xb4eb6c9b228fa72320814db45e70fe33cafcf533e4422bf91e103ba7952d7d6d",
+      "block": 14719924,
+      "method": "sendCredits",
+      "utc": "2026-11-18T07:10:06.000000Z"
+    },
+    {
+      "id": "case-05",
+      "hash": "0xcf6ddea2f3ef87be1d30704170f0b49a62725e256daf02328b82d7d54d5f7425",
+      "block": 14719033,
+      "method": "sendCredits",
+      "utc": "2026-11-18T06:50:06.000000Z"
+    },
+    {
+      "id": "case-06",
+      "hash": "0x6a02aca6afb71f7f0f2cf323d7bda431681f7d9ff2295950b027081624127a3b",
+      "block": 14718811,
+      "method": "sendCredits",
+      "utc": "2026-11-18T06:45:06.000000Z"
+    },
+    {
+      "id": "case-07",
+      "hash": "0xe411dbe6a40a26af089d5a1ccb9d5868b04d57fe494bf163302e834ff7533d29",
+      "block": 14718587,
+      "method": "sendCredits",
+      "utc": "2026-11-18T06:40:05.000000Z"
+    },
+    {
+      "id": "case-08",
+      "hash": "0x78edf422479d8cb988c5e6ae9aceffa0bfcf6a26516fbf1153f332ed00640be8",
+      "block": 14718365,
+      "method": "sendCredits",
+      "utc": "2026-11-18T06:35:05.000000Z"
+    },
+    {
+      "id": "case-09",
+      "hash": "0x5fdd93a859c635f0cbc0bfa1ff26a9b9cb1e7f3eea1a7e03ba4327df0ff8e8fb",
+      "block": 14717921,
+      "method": "sendCredits",
+      "utc": "2026-11-18T06:25:07.000000Z"
+    },
+    {
+      "id": "case-10",
+      "hash": "0x703584b609b2e7e641a3e98a07b7a8427256bd2fa818fe4d0bc51c5d38683064",
+      "block": 14717697,
+      "method": "sendCredits",
+      "utc": "2026-11-18T06:20:05.000000Z"
+    },
+    {
+      "id": "case-11",
+      "hash": "0xe2a0fcb2316efa168f2e68312daf0260408e98f31b1af5ce1bd1ea605dfcdb93",
+      "block": 14717250,
+      "method": "sendCredits",
+      "utc": "2026-11-18T06:10:05.000000Z"
+    },
+    {
+      "id": "case-12",
+      "hash": "0x929698ffe8aadef36602b11564cae7abcd8800ac118ce5a6dd44a15205da8965",
+      "block": 14717028,
+      "method": "sendCredits",
+      "utc": "2026-11-18T06:05:06.000000Z"
+    },
+    {
+      "id": "case-13",
+      "hash": "0x9be02a125cab9059e01211863bffac03d091e3ceac6f34456ae02b8a26b82c35",
+      "block": 14705232,
+      "method": "sendCredits",
+      "utc": "2026-11-18T01:40:06.000000Z"
+    },
+    {
+      "id": "case-14",
+      "hash": "0x3cc942ce0c84a74c67d55c0fe771f4db5b370c020ed2169a20fee2e1e0169d69",
+      "block": 14697204,
+      "method": "sendCredits",
+      "utc": "2026-11-17T22:40:06.000000Z"
+    },
+    {
+      "id": "case-15",
+      "hash": "0xd6d1dce4db1a17836331c28997a2246d77b84de97e3c869dcf5d88014f3a6c20",
+      "block": 14693196,
+      "method": "sendCredits",
+      "utc": "2026-11-17T21:10:04.000000Z"
+    },
+    {
+      "id": "case-16",
+      "hash": "0xb7022a769541123754899a472bf9283868e65c19da06e9f4e62b9795beb6d514",
+      "block": 14690074,
+      "method": "sendCredits",
+      "utc": "2026-11-17T20:00:05.000000Z"
+    },
+    {
+      "id": "case-17",
+      "hash": "0x578c41d7ad11dd2befb48f87e5df881e2827d2f4dc4a879196b1b82083cf6a31",
+      "block": 14687910,
+      "method": "exactInputSingle",
+      "utc": "2026-11-17T19:11:34.000000Z"
+    },
+    {
+      "id": "case-18",
+      "hash": "0xdd7bb3863d8aa4176af9bab16efb8af82da0f41f67c44f1ca2f9bc7f5e56ea57",
+      "block": 14683607,
+      "method": "sendCredits",
+      "utc": "2026-11-17T17:35:37.000000Z"
+    },
+    {
+      "id": "case-19",
+      "hash": "0xf68e45015eac4be19dce1b807b7a99b3a16851dd4253e9f95e42bafc25585052",
+      "block": 14680899,
+      "method": "sendCredits",
+      "utc": "2026-11-17T16:35:06.000000Z"
+    },
+    {
+      "id": "case-20",
+      "hash": "0x8b9c43e1df669078041014d0e3bc637153da386b04446e0256f271cf7fe08471",
+      "block": 14680450,
+      "method": "sendCredits",
+      "utc": "2026-11-17T16:25:07.000000Z"
+    },
+    {
+      "id": "case-21",
+      "hash": "0x6b560f56b756a49bc7c11cecfd7d1d00f79fdd2a5c0e7c900e61f74c8070a8fe",
+      "block": 14679778,
+      "method": "sendCredits",
+      "utc": "2026-11-17T16:10:09.000000Z"
+    },
+    {
+      "id": "case-22",
+      "hash": "0x83011a1f2ae30fb65580b1417ae0dd4b0dd5dfe98d9100e39da3aafbc7a3a680",
+      "block": 14679776,
+      "method": "sendCredits",
+      "utc": "2026-11-17T16:10:07.000000Z"
+    },
+    {
+      "id": "case-23",
+      "hash": "0xffcd5e34eed28e28a0ea99d67e6ac4c4b239f1184f214db88e00250dda7b47e6",
+      "block": 14678881,
+      "method": "sendCredits",
+      "utc": "2026-11-17T15:50:05.000000Z"
+    },
+    {
+      "id": "case-24",
+      "hash": "0xdecc3765d84c2cf0100b73fbaaefedda23208e3eaa8eb07157909c36feefdf29",
+      "block": 14676463,
+      "method": "execute",
+      "utc": "2026-11-17T14:56:05.000000Z"
+    },
+    {
+      "id": "case-25",
+      "hash": "0x4d39b36c5c4e12cdc79eccabffa3acd7e50213a3e651c39377d59de5e338ee80",
+      "block": 14676417,
+      "method": null,
+      "utc": "2026-11-17T14:55:03.000000Z"
+    },
+    {
+      "id": "case-26",
+      "hash": "0x253b1dbd4e53128070379ccb965fbe49679eaff90d0f2301cbeae50d3cd0d691",
+      "block": 14676387,
+      "method": "compose302",
+      "utc": "2026-11-17T14:54:23.000000Z"
+    },
+    {
+      "id": "case-27",
+      "hash": "0x8e126b25681195b0738d1546d5b4c9a4522bcc156b830c522c021d465a086d7c",
+      "block": 14675746,
+      "method": "sendCredits",
+      "utc": "2026-11-17T14:40:06.000000Z"
+    },
+    {
+      "id": "case-28",
+      "hash": "0x6a7592c43adea3e790d49893944dc11b696907823762f2a264f70088c4d663bb",
+      "block": 14669517,
+      "method": "exactInputSingle",
+      "utc": "2026-11-17T12:20:42.000000Z"
+    }
+  ],
+  "control_cases": [
+    {
+      "id": "control-transfer",
+      "hash": "0x028c9c5af09b8500ed8f5dc781478b371049834ac463e978ce7904b133788f34",
+      "block": 13187103,
+      "method": "transfer",
+      "utc": "2026-10-25T08:51:14.000000Z"
+    },
+    {
+      "id": "control-approve",
+      "hash": "0xeb5f28a300049fa08349847ce3614cc84ae25a878ae13b42a4e2303a43cb1145",
+      "block": 14669452,
+      "method": "approve",
+      "utc": "2026-11-17T12:19:15.000000Z"
+    }
+  ],
+  "balance_selection": [
+    "case-01",
+    "case-13",
+    "case-14",
+    "case-27",
+    "case-17",
+    "case-24",
+    "case-25",
+    "case-26",
+    "case-28",
+    "control-transfer",
+    "control-approve"
+  ],
+  "balance_records": [
+    {
+      "case_id": "case-01",
+      "address": "0xe37f7c80ced04c4f243c0fd04a5510d663cb88b5",
+      "before": "bridge-01-caller-coin-before.json",
+      "after": "bridge-01-caller-coin-after.json"
+    },
+    {
+      "case_id": "case-01",
+      "address": "0x674843c06ff83502ddb4d37c2e09c01cda38cbc8",
+      "before": "case-01-party-02-coin-before.json",
+      "after": "case-01-party-02-coin-after.json"
+    },
+    {
+      "case_id": "case-01",
+      "address": "0x6f475642a6e85809b1c36fa62763669b1b48dd5b",
+      "before": "case-01-party-03-coin-before.json",
+      "after": "case-01-party-03-coin-after.json"
+    },
+    {
+      "case_id": "case-01",
+      "address": "0xc39161c743d0307eb9bcc9fef03eeb9dc4802de7",
+      "before": "case-01-party-04-coin-before.json",
+      "after": "case-01-party-04-coin-after.json"
+    },
+    {
+      "case_id": "case-13",
+      "address": "0xe37f7c80ced04c4f243c0fd04a5510d663cb88b5",
+      "before": "case-13-party-01-coin-before.json",
+      "after": "case-13-party-01-coin-after.json"
+    },
+    {
+      "case_id": "case-13",
+      "address": "0x674843c06ff83502ddb4d37c2e09c01cda38cbc8",
+      "before": "case-13-party-02-coin-before.json",
+      "after": "case-13-party-02-coin-after.json"
+    },
+    {
+      "case_id": "case-13",
+      "address": "0x6f475642a6e85809b1c36fa62763669b1b48dd5b",
+      "before": "case-13-party-03-coin-before.json",
+      "after": "case-13-party-03-coin-after.json"
+    },
+    {
+      "case_id": "case-13",
+      "address": "0xc39161c743d0307eb9bcc9fef03eeb9dc4802de7",
+      "before": "case-13-party-04-coin-before.json",
+      "after": "case-13-party-04-coin-after.json"
+    },
+    {
+      "case_id": "case-14",
+      "address": "0xe37f7c80ced04c4f243c0fd04a5510d663cb88b5",
+      "before": "case-14-party-01-coin-before.json",
+      "after": "case-14-party-01-coin-after.json"
+    },
+    {
+      "case_id": "case-14",
+      "address": "0x674843c06ff83502ddb4d37c2e09c01cda38cbc8",
+      "before": "case-14-party-02-coin-before.json",
+      "after": "case-14-party-02-coin-after.json"
+    },
+    {
+      "case_id": "case-14",
+      "address": "0x6f475642a6e85809b1c36fa62763669b1b48dd5b",
+      "before": "case-14-party-03-coin-before.json",
+      "after": "case-14-party-03-coin-after.json"
+    },
+    {
+      "case_id": "case-14",
+      "address": "0xc39161c743d0307eb9bcc9fef03eeb9dc4802de7",
+      "before": "case-14-party-04-coin-before.json",
+      "after": "case-14-party-04-coin-after.json"
+    },
+    {
+      "case_id": "case-27",
+      "address": "0xe37f7c80ced04c4f243c0fd04a5510d663cb88b5",
+      "before": "case-27-party-01-coin-before.json",
+      "after": "case-27-party-01-coin-after.json"
+    },
+    {
+      "case_id": "case-27",
+      "address": "0x674843c06ff83502ddb4d37c2e09c01cda38cbc8",
+      "before": "case-27-party-02-coin-before.json",
+      "after": "case-27-party-02-coin-after.json"
+    },
+    {
+      "case_id": "case-27",
+      "address": "0x6f475642a6e85809b1c36fa62763669b1b48dd5b",
+      "before": "case-27-party-03-coin-before.json",
+      "after": "case-27-party-03-coin-after.json"
+    },
+    {
+      "case_id": "case-27",
+      "address": "0xc39161c743d0307eb9bcc9fef03eeb9dc4802de7",
+      "before": "case-27-party-04-coin-before.json",
+      "after": "case-27-party-04-coin-after.json"
+    },
+    {
+      "case_id": "case-17",
+      "address": "0x00025d77f296c06803efd0de150ad1e10b56fb11",
+      "before": "case-17-party-01-coin-before.json",
+      "after": "case-17-party-01-coin-after.json"
+    },
+    {
+      "case_id": "case-17",
+      "address": "0x6d63b39017f379bfd0301293022581c6ef237a19",
+      "before": "case-17-party-02-coin-before.json",
+      "after": "case-17-party-02-coin-after.json"
+    },
+    {
+      "case_id": "case-17",
+      "address": "0x07bebed47383e1bf3ec4f75eab2c65a0eff00fa1",
+      "before": "case-17-party-03-coin-before.json",
+      "after": "case-17-party-03-coin-after.json"
+    },
+    {
+      "case_id": "case-24",
+      "address": "0x2ed7120f6727ab95f1eb0e63581300716d79eadb",
+      "before": "case-24-party-01-coin-before.json",
+      "after": "case-24-party-01-coin-after.json"
+    },
+    {
+      "case_id": "case-24",
+      "address": "0xd4d9f3f737eb3c4feeffed511b64655fb956f911",
+      "before": "case-24-party-02-coin-before.json",
+      "after": "case-24-party-02-coin-after.json"
+    },
+    {
+      "case_id": "case-24",
+      "address": "0x3147be1cd913fe9ea5df7505ffe704a8313b20b0",
+      "before": "case-24-party-03-coin-before.json",
+      "after": "case-24-party-03-coin-after.json"
+    },
+    {
+      "case_id": "case-24",
+      "address": "0x6f475642a6e85809b1c36fa62763669b1b48dd5b",
+      "before": "case-24-party-04-coin-before.json",
+      "after": "case-24-party-04-coin-after.json"
+    },
+    {
+      "case_id": "case-24",
+      "address": "0xc39161c743d0307eb9bcc9fef03eeb9dc4802de7",
+      "before": "case-24-party-05-coin-before.json",
+      "after": "case-24-party-05-coin-after.json"
+    },
+    {
+      "case_id": "case-25",
+      "address": "0x2165b3dc1060123485fb20f1d59784b886874735",
+      "before": "case-25-party-01-coin-before.json",
+      "after": "case-25-party-01-coin-after.json"
+    },
+    {
+      "case_id": "case-25",
+      "address": "0x2ed7120f6727ab95f1eb0e63581300716d79eadb",
+      "before": "case-25-party-02-coin-before.json",
+      "after": "case-25-party-02-coin-after.json"
+    },
+    {
+      "case_id": "case-26",
+      "address": "0xe93685f3bba03016f02bd1828badd6195988d950",
+      "before": "case-26-party-01-coin-before.json",
+      "after": "case-26-party-01-coin-after.json"
+    },
+    {
+      "case_id": "case-26",
+      "address": "0x4208d6e27538189bb48e603d6123a94b8abe0a0b",
+      "before": "case-26-party-02-coin-before.json",
+      "after": "case-26-party-02-coin-after.json"
+    },
+    {
+      "case_id": "case-26",
+      "address": "0x2165b3dc1060123485fb20f1d59784b886874735",
+      "before": "case-26-party-03-coin-before.json",
+      "after": "case-26-party-03-coin-after.json"
+    },
+    {
+      "case_id": "case-28",
+      "address": "0x00025d77f296c06803efd0de150ad1e10b56fb11",
+      "before": "case-28-party-01-coin-before.json",
+      "after": "case-28-party-01-coin-after.json"
+    },
+    {
+      "case_id": "case-28",
+      "address": "0x6d63b39017f379bfd0301293022581c6ef237a19",
+      "before": "case-28-party-02-coin-before.json",
+      "after": "case-28-party-02-coin-after.json"
+    },
+    {
+      "case_id": "case-28",
+      "address": "0x07bebed47383e1bf3ec4f75eab2c65a0eff00fa1",
+      "before": "case-28-party-03-coin-before.json",
+      "after": "case-28-party-03-coin-after.json"
+    },
+    {
+      "case_id": "control-transfer",
+      "address": "0x8aceb267fae872049ffe96a740b5b0dc3a6ecf88",
+      "before": "control-transfer-party-01-coin-before.json",
+      "after": "control-transfer-party-01-coin-after.json"
+    },
+    {
+      "case_id": "control-transfer",
+      "address": "0x0000000000000000000000000000000000000400",
+      "before": "control-transfer-party-02-coin-before.json",
+      "after": "control-transfer-party-02-coin-after.json"
+    },
+    {
+      "case_id": "control-transfer",
+      "address": "0x5eb12d076295cf23c44ed5d632d6b6a623e25592",
+      "before": "control-transfer-party-03-coin-before.json",
+      "after": "control-transfer-party-03-coin-after.json"
+    },
+    {
+      "case_id": "control-approve",
+      "address": "0x1569a4bb96f22b00eb07fb4d556bc1ee8e06b8ba",
+      "before": "control-approve-party-01-coin-before.json",
+      "after": "control-approve-party-01-coin-after.json"
+    },
+    {
+      "case_id": "control-approve",
+      "address": "0x0000000000000000000000000000000000000400",
+      "before": "control-approve-party-02-coin-before.json",
+      "after": "control-approve-party-02-coin-after.json"
+    }
+  ],
+  "responses": [
+    {
+      "file": "mainnet-token-transfers-page1.json",
+      "url": "https://explorer.rayls.com/api/v2/tokens/0x0000000000000000000000000000000000000400/transfers",
+      "collected_utc": "2026-11-18T09:00:39.097Z",
+      "surface": "Rayls Explorer Swagger live response (pretty-printed JSON)"
+    },
+    {
+      "file": "mainnet-token-transfers-page2.json",
+      "url": "https://explorer.rayls.com/api/v2/tokens/0x0000000000000000000000000000000000000400/transfers?index=6&block_number=14705232",
+      "collected_utc": "2026-11-18T09:01:49.192Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "bridge-01-transaction.json",
+      "url": "https://explorer.rayls.com/api/v2/transactions/0x29a651bbd3d52b4a6a961358870275113d5757468b476a885b7618ba87d5c4d2",
+      "collected_utc": "2026-11-18T09:01:49.509Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "bridge-01-logs.json",
+      "url": "https://explorer.rayls.com/api/v2/transactions/0x29a651bbd3d52b4a6a961358870275113d5757468b476a885b7618ba87d5c4d2/logs",
+      "collected_utc": "2026-11-18T09:02:21.753Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "bridge-01-state-changes.json",
+      "url": "https://explorer.rayls.com/api/v2/transactions/0x29a651bbd3d52b4a6a961358870275113d5757468b476a885b7618ba87d5c4d2/state-changes",
+      "collected_utc": "2026-11-18T09:02:22.087Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "bridge-01-internal-transactions.json",
+      "url": "https://explorer.rayls.com/api/v2/transactions/0x29a651bbd3d52b4a6a961358870275113d5757468b476a885b7618ba87d5c4d2/internal-transactions",
+      "collected_utc": "2026-11-18T09:02:22.254Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "bridge-01-caller-coin-before.json",
+      "url": "https://explorer.rayls.com/api?module=account&action=eth_get_balance&address=0xe37f7c80ceD04c4F243C0Fd04A5510D663CB88b5&block=14723933",
+      "collected_utc": "2026-11-18T09:03:12.196Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "bridge-01-caller-coin-after.json",
+      "url": "https://explorer.rayls.com/api?module=account&action=eth_get_balance&address=0xe37f7c80ceD04c4F243C0Fd04A5510D663CB88b5&block=14723934",
+      "collected_utc": "2026-11-18T09:03:12.330Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "bridge-01-block.json",
+      "url": "https://explorer.rayls.com/api/v2/blocks/14723934",
+      "collected_utc": "2026-11-18T09:03:12.609Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "mainnet-credit-contract-tx-page1.json",
+      "url": "https://explorer.rayls.com/api/v2/addresses/0x674843C06FF83502ddb4D37c2E09C01cdA38cbc8/transactions",
+      "collected_utc": "2026-11-18T09:04:14.706Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-02-logs.json",
+      "url": "https://explorer.rayls.com/api/v2/transactions/0x091ceb6593f7bf292699a50548c51d52d5659c3e2a9bac0a8dac6f058c5d9e91/logs",
+      "collected_utc": "2026-11-18T09:04:52.260Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-03-logs.json",
+      "url": "https://explorer.rayls.com/api/v2/transactions/0xe6d8ae6874c88301144cfb323f636b250581b7dd1dc0ab98e47fae24b3ce90b9/logs",
+      "collected_utc": "2026-11-18T09:04:52.484Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-04-logs.json",
+      "url": "https://explorer.rayls.com/api/v2/transactions/0xb4eb6c9b228fa72320814db45e70fe33cafcf533e4422bf91e103ba7952d7d6d/logs",
+      "collected_utc": "2026-11-18T09:04:52.723Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-05-logs.json",
+      "url": "https://explorer.rayls.com/api/v2/transactions/0xcf6ddea2f3ef87be1d30704170f0b49a62725e256daf02328b82d7d54d5f7425/logs",
+      "collected_utc": "2026-11-18T09:04:53.031Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-06-logs.json",
+      "url": "https://explorer.rayls.com/api/v2/transactions/0x6a02aca6afb71f7f0f2cf323d7bda431681f7d9ff2295950b027081624127a3b/logs",
+      "collected_utc": "2026-11-18T09:04:53.289Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-07-logs.json",
+      "url": "https://explorer.rayls.com/api/v2/transactions/0xe411dbe6a40a26af089d5a1ccb9d5868b04d57fe494bf163302e834ff7533d29/logs",
+      "collected_utc": "2026-11-18T09:04:53.561Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-08-logs.json",
+      "url": "https://explorer.rayls.com/api/v2/transactions/0x78edf422479d8cb988c5e6ae9aceffa0bfcf6a26516fbf1153f332ed00640be8/logs",
+      "collected_utc": "2026-11-18T09:04:53.810Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-09-logs.json",
+      "url": "https://explorer.rayls.com/api/v2/transactions/0x5fdd93a859c635f0cbc0bfa1ff26a9b9cb1e7f3eea1a7e03ba4327df0ff8e8fb/logs",
+      "collected_utc": "2026-11-18T09:04:54.086Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-10-logs.json",
+      "url": "https://explorer.rayls.com/api/v2/transactions/0x703584b609b2e7e641a3e98a07b7a8427256bd2fa818fe4d0bc51c5d38683064/logs",
+      "collected_utc": "2026-11-18T09:04:54.310Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-11-logs.json",
+      "url": "https://explorer.rayls.com/api/v2/transactions/0xe2a0fcb2316efa168f2e68312daf0260408e98f31b1af5ce1bd1ea605dfcdb93/logs",
+      "collected_utc": "2026-11-18T09:04:54.531Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-12-logs.json",
+      "url": "https://explorer.rayls.com/api/v2/transactions/0x929698ffe8aadef36602b11564cae7abcd8800ac118ce5a6dd44a15205da8965/logs",
+      "collected_utc": "2026-11-18T09:04:54.751Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-13-logs.json",
+      "url": "https://explorer.rayls.com/api/v2/transactions/0x9be02a125cab9059e01211863bffac03d091e3ceac6f34456ae02b8a26b82c35/logs",
+      "collected_utc": "2026-11-18T09:04:54.992Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-14-logs.json",
+      "url": "https://explorer.rayls.com/api/v2/transactions/0x3cc942ce0c84a74c67d55c0fe771f4db5b370c020ed2169a20fee2e1e0169d69/logs",
+      "collected_utc": "2026-11-18T09:04:55.301Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-15-logs.json",
+      "url": "https://explorer.rayls.com/api/v2/transactions/0xd6d1dce4db1a17836331c28997a2246d77b84de97e3c869dcf5d88014f3a6c20/logs",
+      "collected_utc": "2026-11-18T09:05:03.698Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-16-logs.json",
+      "url": "https://explorer.rayls.com/api/v2/transactions/0xb7022a769541123754899a472bf9283868e65c19da06e9f4e62b9795beb6d514/logs",
+      "collected_utc": "2026-11-18T09:05:03.937Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-17-transaction.json",
+      "url": "https://explorer.rayls.com/api/v2/transactions/0x578c41d7ad11dd2befb48f87e5df881e2827d2f4dc4a879196b1b82083cf6a31",
+      "collected_utc": "2026-11-18T09:05:04.360Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-17-logs.json",
+      "url": "https://explorer.rayls.com/api/v2/transactions/0x578c41d7ad11dd2befb48f87e5df881e2827d2f4dc4a879196b1b82083cf6a31/logs",
+      "collected_utc": "2026-11-18T09:05:04.642Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-18-logs.json",
+      "url": "https://explorer.rayls.com/api/v2/transactions/0xdd7bb3863d8aa4176af9bab16efb8af82da0f41f67c44f1ca2f9bc7f5e56ea57/logs",
+      "collected_utc": "2026-11-18T09:05:04.895Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-19-logs.json",
+      "url": "https://explorer.rayls.com/api/v2/transactions/0xf68e45015eac4be19dce1b807b7a99b3a16851dd4253e9f95e42bafc25585052/logs",
+      "collected_utc": "2026-11-18T09:05:05.115Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-20-logs.json",
+      "url": "https://explorer.rayls.com/api/v2/transactions/0x8b9c43e1df669078041014d0e3bc637153da386b04446e0256f271cf7fe08471/logs",
+      "collected_utc": "2026-11-18T09:05:05.312Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-21-logs.json",
+      "url": "https://explorer.rayls.com/api/v2/transactions/0x6b560f56b756a49bc7c11cecfd7d1d00f79fdd2a5c0e7c900e61f74c8070a8fe/logs",
+      "collected_utc": "2026-11-18T09:05:05.530Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-22-logs.json",
+      "url": "https://explorer.rayls.com/api/v2/transactions/0x83011a1f2ae30fb65580b1417ae0dd4b0dd5dfe98d9100e39da3aafbc7a3a680/logs",
+      "collected_utc": "2026-11-18T09:05:05.745Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-23-logs.json",
+      "url": "https://explorer.rayls.com/api/v2/transactions/0xffcd5e34eed28e28a0ea99d67e6ac4c4b239f1184f214db88e00250dda7b47e6/logs",
+      "collected_utc": "2026-11-18T09:05:06.016Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-24-transaction.json",
+      "url": "https://explorer.rayls.com/api/v2/transactions/0xdecc3765d84c2cf0100b73fbaaefedda23208e3eaa8eb07157909c36feefdf29",
+      "collected_utc": "2026-11-18T09:05:06.482Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-24-logs.json",
+      "url": "https://explorer.rayls.com/api/v2/transactions/0xdecc3765d84c2cf0100b73fbaaefedda23208e3eaa8eb07157909c36feefdf29/logs",
+      "collected_utc": "2026-11-18T09:05:06.748Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-25-transaction.json",
+      "url": "https://explorer.rayls.com/api/v2/transactions/0x4d39b36c5c4e12cdc79eccabffa3acd7e50213a3e651c39377d59de5e338ee80",
+      "collected_utc": "2026-11-18T09:05:07.171Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-25-logs.json",
+      "url": "https://explorer.rayls.com/api/v2/transactions/0x4d39b36c5c4e12cdc79eccabffa3acd7e50213a3e651c39377d59de5e338ee80/logs",
+      "collected_utc": "2026-11-18T09:05:07.364Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-26-transaction.json",
+      "url": "https://explorer.rayls.com/api/v2/transactions/0x253b1dbd4e53128070379ccb965fbe49679eaff90d0f2301cbeae50d3cd0d691",
+      "collected_utc": "2026-11-18T09:05:07.689Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-26-logs.json",
+      "url": "https://explorer.rayls.com/api/v2/transactions/0x253b1dbd4e53128070379ccb965fbe49679eaff90d0f2301cbeae50d3cd0d691/logs",
+      "collected_utc": "2026-11-18T09:05:07.939Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-27-logs.json",
+      "url": "https://explorer.rayls.com/api/v2/transactions/0x8e126b25681195b0738d1546d5b4c9a4522bcc156b830c522c021d465a086d7c/logs",
+      "collected_utc": "2026-11-18T09:05:08.175Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-28-transaction.json",
+      "url": "https://explorer.rayls.com/api/v2/transactions/0x6a7592c43adea3e790d49893944dc11b696907823762f2a264f70088c4d663bb",
+      "collected_utc": "2026-11-18T09:05:08.573Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-28-logs.json",
+      "url": "https://explorer.rayls.com/api/v2/transactions/0x6a7592c43adea3e790d49893944dc11b696907823762f2a264f70088c4d663bb/logs",
+      "collected_utc": "2026-11-18T09:05:08.782Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-13-block.json",
+      "url": "https://explorer.rayls.com/api/v2/blocks/14705232",
+      "collected_utc": "2026-11-18T09:05:37.737Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-14-block.json",
+      "url": "https://explorer.rayls.com/api/v2/blocks/14697204",
+      "collected_utc": "2026-11-18T09:05:37.923Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-27-block.json",
+      "url": "https://explorer.rayls.com/api/v2/blocks/14675746",
+      "collected_utc": "2026-11-18T09:05:38.082Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-17-block.json",
+      "url": "https://explorer.rayls.com/api/v2/blocks/14687910",
+      "collected_utc": "2026-11-18T09:05:38.257Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-24-block.json",
+      "url": "https://explorer.rayls.com/api/v2/blocks/14676463",
+      "collected_utc": "2026-11-18T09:05:38.485Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-25-block.json",
+      "url": "https://explorer.rayls.com/api/v2/blocks/14676417",
+      "collected_utc": "2026-11-18T09:05:38.666Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-26-block.json",
+      "url": "https://explorer.rayls.com/api/v2/blocks/14676387",
+      "collected_utc": "2026-11-18T09:05:38.895Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-28-block.json",
+      "url": "https://explorer.rayls.com/api/v2/blocks/14669517",
+      "collected_utc": "2026-11-18T09:05:39.101Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-01-party-02-coin-before.json",
+      "url": "https://explorer.rayls.com/api?module=account&action=eth_get_balance&address=0x674843c06ff83502ddb4d37c2e09c01cda38cbc8&block=14723933",
+      "collected_utc": "2026-11-18T09:06:25.119Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-01-party-02-coin-after.json",
+      "url": "https://explorer.rayls.com/api?module=account&action=eth_get_balance&address=0x674843c06ff83502ddb4d37c2e09c01cda38cbc8&block=14723934",
+      "collected_utc": "2026-11-18T09:06:25.245Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-01-party-03-coin-before.json",
+      "url": "https://explorer.rayls.com/api?module=account&action=eth_get_balance&address=0x6f475642a6e85809b1c36fa62763669b1b48dd5b&block=14723933",
+      "collected_utc": "2026-11-18T09:06:25.394Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-01-party-03-coin-after.json",
+      "url": "https://explorer.rayls.com/api?module=account&action=eth_get_balance&address=0x6f475642a6e85809b1c36fa62763669b1b48dd5b&block=14723934",
+      "collected_utc": "2026-11-18T09:06:25.533Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-01-party-04-coin-before.json",
+      "url": "https://explorer.rayls.com/api?module=account&action=eth_get_balance&address=0xc39161c743d0307eb9bcc9fef03eeb9dc4802de7&block=14723933",
+      "collected_utc": "2026-11-18T09:06:25.677Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-01-party-04-coin-after.json",
+      "url": "https://explorer.rayls.com/api?module=account&action=eth_get_balance&address=0xc39161c743d0307eb9bcc9fef03eeb9dc4802de7&block=14723934",
+      "collected_utc": "2026-11-18T09:06:25.829Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-13-party-01-coin-before.json",
+      "url": "https://explorer.rayls.com/api?module=account&action=eth_get_balance&address=0xe37f7c80ced04c4f243c0fd04a5510d663cb88b5&block=14705231",
+      "collected_utc": "2026-11-18T09:06:25.976Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-13-party-01-coin-after.json",
+      "url": "https://explorer.rayls.com/api?module=account&action=eth_get_balance&address=0xe37f7c80ced04c4f243c0fd04a5510d663cb88b5&block=14705232",
+      "collected_utc": "2026-11-18T09:06:26.112Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-13-party-02-coin-before.json",
+      "url": "https://explorer.rayls.com/api?module=account&action=eth_get_balance&address=0x674843c06ff83502ddb4d37c2e09c01cda38cbc8&block=14705231",
+      "collected_utc": "2026-11-18T09:06:26.251Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-13-party-02-coin-after.json",
+      "url": "https://explorer.rayls.com/api?module=account&action=eth_get_balance&address=0x674843c06ff83502ddb4d37c2e09c01cda38cbc8&block=14705232",
+      "collected_utc": "2026-11-18T09:06:26.406Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-13-party-03-coin-before.json",
+      "url": "https://explorer.rayls.com/api?module=account&action=eth_get_balance&address=0x6f475642a6e85809b1c36fa62763669b1b48dd5b&block=14705231",
+      "collected_utc": "2026-11-18T09:06:26.551Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-13-party-03-coin-after.json",
+      "url": "https://explorer.rayls.com/api?module=account&action=eth_get_balance&address=0x6f475642a6e85809b1c36fa62763669b1b48dd5b&block=14705232",
+      "collected_utc": "2026-11-18T09:06:26.698Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-13-party-04-coin-before.json",
+      "url": "https://explorer.rayls.com/api?module=account&action=eth_get_balance&address=0xc39161c743d0307eb9bcc9fef03eeb9dc4802de7&block=14705231",
+      "collected_utc": "2026-11-18T09:06:26.841Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-13-party-04-coin-after.json",
+      "url": "https://explorer.rayls.com/api?module=account&action=eth_get_balance&address=0xc39161c743d0307eb9bcc9fef03eeb9dc4802de7&block=14705232",
+      "collected_utc": "2026-11-18T09:06:26.978Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-14-party-01-coin-before.json",
+      "url": "https://explorer.rayls.com/api?module=account&action=eth_get_balance&address=0xe37f7c80ced04c4f243c0fd04a5510d663cb88b5&block=14697203",
+      "collected_utc": "2026-11-18T09:06:27.126Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-14-party-01-coin-after.json",
+      "url": "https://explorer.rayls.com/api?module=account&action=eth_get_balance&address=0xe37f7c80ced04c4f243c0fd04a5510d663cb88b5&block=14697204",
+      "collected_utc": "2026-11-18T09:06:27.250Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-14-party-02-coin-before.json",
+      "url": "https://explorer.rayls.com/api?module=account&action=eth_get_balance&address=0x674843c06ff83502ddb4d37c2e09c01cda38cbc8&block=14697203",
+      "collected_utc": "2026-11-18T09:06:27.383Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-14-party-02-coin-after.json",
+      "url": "https://explorer.rayls.com/api?module=account&action=eth_get_balance&address=0x674843c06ff83502ddb4d37c2e09c01cda38cbc8&block=14697204",
+      "collected_utc": "2026-11-18T09:06:27.536Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-14-party-03-coin-before.json",
+      "url": "https://explorer.rayls.com/api?module=account&action=eth_get_balance&address=0x6f475642a6e85809b1c36fa62763669b1b48dd5b&block=14697203",
+      "collected_utc": "2026-11-18T09:06:27.671Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-14-party-03-coin-after.json",
+      "url": "https://explorer.rayls.com/api?module=account&action=eth_get_balance&address=0x6f475642a6e85809b1c36fa62763669b1b48dd5b&block=14697204",
+      "collected_utc": "2026-11-18T09:06:27.837Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-14-party-04-coin-before.json",
+      "url": "https://explorer.rayls.com/api?module=account&action=eth_get_balance&address=0xc39161c743d0307eb9bcc9fef03eeb9dc4802de7&block=14697203",
+      "collected_utc": "2026-11-18T09:06:27.993Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-14-party-04-coin-after.json",
+      "url": "https://explorer.rayls.com/api?module=account&action=eth_get_balance&address=0xc39161c743d0307eb9bcc9fef03eeb9dc4802de7&block=14697204",
+      "collected_utc": "2026-11-18T09:06:28.179Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-27-party-01-coin-before.json",
+      "url": "https://explorer.rayls.com/api?module=account&action=eth_get_balance&address=0xe37f7c80ced04c4f243c0fd04a5510d663cb88b5&block=14675745",
+      "collected_utc": "2026-11-18T09:06:28.330Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-27-party-01-coin-after.json",
+      "url": "https://explorer.rayls.com/api?module=account&action=eth_get_balance&address=0xe37f7c80ced04c4f243c0fd04a5510d663cb88b5&block=14675746",
+      "collected_utc": "2026-11-18T09:06:28.482Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-27-party-02-coin-before.json",
+      "url": "https://explorer.rayls.com/api?module=account&action=eth_get_balance&address=0x674843c06ff83502ddb4d37c2e09c01cda38cbc8&block=14675745",
+      "collected_utc": "2026-11-18T09:06:28.617Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-27-party-02-coin-after.json",
+      "url": "https://explorer.rayls.com/api?module=account&action=eth_get_balance&address=0x674843c06ff83502ddb4d37c2e09c01cda38cbc8&block=14675746",
+      "collected_utc": "2026-11-18T09:06:28.745Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-27-party-03-coin-before.json",
+      "url": "https://explorer.rayls.com/api?module=account&action=eth_get_balance&address=0x6f475642a6e85809b1c36fa62763669b1b48dd5b&block=14675745",
+      "collected_utc": "2026-11-18T09:06:28.892Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-27-party-03-coin-after.json",
+      "url": "https://explorer.rayls.com/api?module=account&action=eth_get_balance&address=0x6f475642a6e85809b1c36fa62763669b1b48dd5b&block=14675746",
+      "collected_utc": "2026-11-18T09:06:29.013Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-27-party-04-coin-before.json",
+      "url": "https://explorer.rayls.com/api?module=account&action=eth_get_balance&address=0xc39161c743d0307eb9bcc9fef03eeb9dc4802de7&block=14675745",
+      "collected_utc": "2026-11-18T09:06:29.149Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-27-party-04-coin-after.json",
+      "url": "https://explorer.rayls.com/api?module=account&action=eth_get_balance&address=0xc39161c743d0307eb9bcc9fef03eeb9dc4802de7&block=14675746",
+      "collected_utc": "2026-11-18T09:06:29.298Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-17-party-01-coin-before.json",
+      "url": "https://explorer.rayls.com/api?module=account&action=eth_get_balance&address=0x00025d77f296c06803efd0de150ad1e10b56fb11&block=14687909",
+      "collected_utc": "2026-11-18T09:06:43.466Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-17-party-01-coin-after.json",
+      "url": "https://explorer.rayls.com/api?module=account&action=eth_get_balance&address=0x00025d77f296c06803efd0de150ad1e10b56fb11&block=14687910",
+      "collected_utc": "2026-11-18T09:06:43.601Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-17-party-02-coin-before.json",
+      "url": "https://explorer.rayls.com/api?module=account&action=eth_get_balance&address=0x6d63b39017f379bfd0301293022581c6ef237a19&block=14687909",
+      "collected_utc": "2026-11-18T09:06:43.752Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-17-party-02-coin-after.json",
+      "url": "https://explorer.rayls.com/api?module=account&action=eth_get_balance&address=0x6d63b39017f379bfd0301293022581c6ef237a19&block=14687910",
+      "collected_utc": "2026-11-18T09:06:43.886Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-17-party-03-coin-before.json",
+      "url": "https://explorer.rayls.com/api?module=account&action=eth_get_balance&address=0x07bebed47383e1bf3ec4f75eab2c65a0eff00fa1&block=14687909",
+      "collected_utc": "2026-11-18T09:06:44.009Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-17-party-03-coin-after.json",
+      "url": "https://explorer.rayls.com/api?module=account&action=eth_get_balance&address=0x07bebed47383e1bf3ec4f75eab2c65a0eff00fa1&block=14687910",
+      "collected_utc": "2026-11-18T09:06:44.139Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-24-party-01-coin-before.json",
+      "url": "https://explorer.rayls.com/api?module=account&action=eth_get_balance&address=0x2ed7120f6727ab95f1eb0e63581300716d79eadb&block=14676462",
+      "collected_utc": "2026-11-18T09:06:44.267Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-24-party-01-coin-after.json",
+      "url": "https://explorer.rayls.com/api?module=account&action=eth_get_balance&address=0x2ed7120f6727ab95f1eb0e63581300716d79eadb&block=14676463",
+      "collected_utc": "2026-11-18T09:06:44.402Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-24-party-02-coin-before.json",
+      "url": "https://explorer.rayls.com/api?module=account&action=eth_get_balance&address=0xd4d9f3f737eb3c4feeffed511b64655fb956f911&block=14676462",
+      "collected_utc": "2026-11-18T09:06:44.537Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-24-party-02-coin-after.json",
+      "url": "https://explorer.rayls.com/api?module=account&action=eth_get_balance&address=0xd4d9f3f737eb3c4feeffed511b64655fb956f911&block=14676463",
+      "collected_utc": "2026-11-18T09:06:44.671Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-24-party-03-coin-before.json",
+      "url": "https://explorer.rayls.com/api?module=account&action=eth_get_balance&address=0x3147be1cd913fe9ea5df7505ffe704a8313b20b0&block=14676462",
+      "collected_utc": "2026-11-18T09:06:44.818Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-24-party-03-coin-after.json",
+      "url": "https://explorer.rayls.com/api?module=account&action=eth_get_balance&address=0x3147be1cd913fe9ea5df7505ffe704a8313b20b0&block=14676463",
+      "collected_utc": "2026-11-18T09:06:44.941Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-24-party-04-coin-before.json",
+      "url": "https://explorer.rayls.com/api?module=account&action=eth_get_balance&address=0x6f475642a6e85809b1c36fa62763669b1b48dd5b&block=14676462",
+      "collected_utc": "2026-11-18T09:06:45.076Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-24-party-04-coin-after.json",
+      "url": "https://explorer.rayls.com/api?module=account&action=eth_get_balance&address=0x6f475642a6e85809b1c36fa62763669b1b48dd5b&block=14676463",
+      "collected_utc": "2026-11-18T09:06:45.217Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-24-party-05-coin-before.json",
+      "url": "https://explorer.rayls.com/api?module=account&action=eth_get_balance&address=0xc39161c743d0307eb9bcc9fef03eeb9dc4802de7&block=14676462",
+      "collected_utc": "2026-11-18T09:06:45.361Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-24-party-05-coin-after.json",
+      "url": "https://explorer.rayls.com/api?module=account&action=eth_get_balance&address=0xc39161c743d0307eb9bcc9fef03eeb9dc4802de7&block=14676463",
+      "collected_utc": "2026-11-18T09:06:45.507Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-25-party-01-coin-before.json",
+      "url": "https://explorer.rayls.com/api?module=account&action=eth_get_balance&address=0x2165b3dc1060123485fb20f1d59784b886874735&block=14676416",
+      "collected_utc": "2026-11-18T09:06:45.644Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-25-party-01-coin-after.json",
+      "url": "https://explorer.rayls.com/api?module=account&action=eth_get_balance&address=0x2165b3dc1060123485fb20f1d59784b886874735&block=14676417",
+      "collected_utc": "2026-11-18T09:06:45.775Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-25-party-02-coin-before.json",
+      "url": "https://explorer.rayls.com/api?module=account&action=eth_get_balance&address=0x2ed7120f6727ab95f1eb0e63581300716d79eadb&block=14676416",
+      "collected_utc": "2026-11-18T09:06:45.903Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-25-party-02-coin-after.json",
+      "url": "https://explorer.rayls.com/api?module=account&action=eth_get_balance&address=0x2ed7120f6727ab95f1eb0e63581300716d79eadb&block=14676417",
+      "collected_utc": "2026-11-18T09:06:46.043Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-26-party-01-coin-before.json",
+      "url": "https://explorer.rayls.com/api?module=account&action=eth_get_balance&address=0xe93685f3bba03016f02bd1828badd6195988d950&block=14676386",
+      "collected_utc": "2026-11-18T09:06:46.161Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-26-party-01-coin-after.json",
+      "url": "https://explorer.rayls.com/api?module=account&action=eth_get_balance&address=0xe93685f3bba03016f02bd1828badd6195988d950&block=14676387",
+      "collected_utc": "2026-11-18T09:06:46.291Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-26-party-02-coin-before.json",
+      "url": "https://explorer.rayls.com/api?module=account&action=eth_get_balance&address=0x4208d6e27538189bb48e603d6123a94b8abe0a0b&block=14676386",
+      "collected_utc": "2026-11-18T09:06:46.419Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-26-party-02-coin-after.json",
+      "url": "https://explorer.rayls.com/api?module=account&action=eth_get_balance&address=0x4208d6e27538189bb48e603d6123a94b8abe0a0b&block=14676387",
+      "collected_utc": "2026-11-18T09:06:46.552Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-26-party-03-coin-before.json",
+      "url": "https://explorer.rayls.com/api?module=account&action=eth_get_balance&address=0x2165b3dc1060123485fb20f1d59784b886874735&block=14676386",
+      "collected_utc": "2026-11-18T09:06:46.690Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-26-party-03-coin-after.json",
+      "url": "https://explorer.rayls.com/api?module=account&action=eth_get_balance&address=0x2165b3dc1060123485fb20f1d59784b886874735&block=14676387",
+      "collected_utc": "2026-11-18T09:06:46.847Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-28-party-01-coin-before.json",
+      "url": "https://explorer.rayls.com/api?module=account&action=eth_get_balance&address=0x00025d77f296c06803efd0de150ad1e10b56fb11&block=14669516",
+      "collected_utc": "2026-11-18T09:06:46.996Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-28-party-01-coin-after.json",
+      "url": "https://explorer.rayls.com/api?module=account&action=eth_get_balance&address=0x00025d77f296c06803efd0de150ad1e10b56fb11&block=14669517",
+      "collected_utc": "2026-11-18T09:06:47.129Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-28-party-02-coin-before.json",
+      "url": "https://explorer.rayls.com/api?module=account&action=eth_get_balance&address=0x6d63b39017f379bfd0301293022581c6ef237a19&block=14669516",
+      "collected_utc": "2026-11-18T09:06:47.261Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-28-party-02-coin-after.json",
+      "url": "https://explorer.rayls.com/api?module=account&action=eth_get_balance&address=0x6d63b39017f379bfd0301293022581c6ef237a19&block=14669517",
+      "collected_utc": "2026-11-18T09:06:47.388Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-28-party-03-coin-before.json",
+      "url": "https://explorer.rayls.com/api?module=account&action=eth_get_balance&address=0x07bebed47383e1bf3ec4f75eab2c65a0eff00fa1&block=14669516",
+      "collected_utc": "2026-11-18T09:06:47.513Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "case-28-party-03-coin-after.json",
+      "url": "https://explorer.rayls.com/api?module=account&action=eth_get_balance&address=0x07bebed47383e1bf3ec4f75eab2c65a0eff00fa1&block=14669517",
+      "collected_utc": "2026-11-18T09:06:47.652Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "mainnet-usdr-token-metadata.json",
+      "url": "https://explorer.rayls.com/api/v2/tokens/0x0000000000000000000000000000000000000400",
+      "collected_utc": "2026-11-18T09:06:47.778Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "mint-to-transfer-coin-history.json",
+      "url": "https://explorer.rayls.com/api/v2/addresses/0x2165b3dC1060123485fb20F1D59784b886874735/coin-balance-history",
+      "collected_utc": "2026-11-18T09:08:16.385Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "mint-to-transfer-address-transactions.json",
+      "url": "https://explorer.rayls.com/api/v2/addresses/0x2165b3dC1060123485fb20F1D59784b886874735/transactions",
+      "collected_utc": "2026-11-18T09:08:17.635Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "mainnet-usdr-wrapper-tx-page1.json",
+      "url": "https://explorer.rayls.com/api/v2/addresses/0x0000000000000000000000000000000000000400/transactions",
+      "collected_utc": "2026-11-18T09:09:42.147Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "control-transfer-block.json",
+      "url": "https://explorer.rayls.com/api/v2/blocks/13187103",
+      "collected_utc": "2026-11-18T09:10:15.180Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "control-transfer-logs.json",
+      "url": "https://explorer.rayls.com/api/v2/transactions/0x028c9c5af09b8500ed8f5dc781478b371049834ac463e978ce7904b133788f34/logs",
+      "collected_utc": "2026-11-18T09:10:15.409Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "control-transfer-token-transfers.json",
+      "url": "https://explorer.rayls.com/api/v2/transactions/0x028c9c5af09b8500ed8f5dc781478b371049834ac463e978ce7904b133788f34/token-transfers",
+      "collected_utc": "2026-11-18T09:10:15.649Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "control-approve-block.json",
+      "url": "https://explorer.rayls.com/api/v2/blocks/14669452",
+      "collected_utc": "2026-11-18T09:10:15.943Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "control-approve-logs.json",
+      "url": "https://explorer.rayls.com/api/v2/transactions/0xeb5f28a300049fa08349847ce3614cc84ae25a878ae13b42a4e2303a43cb1145/logs",
+      "collected_utc": "2026-11-18T09:10:16.158Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "control-approve-token-transfers.json",
+      "url": "https://explorer.rayls.com/api/v2/transactions/0xeb5f28a300049fa08349847ce3614cc84ae25a878ae13b42a4e2303a43cb1145/token-transfers",
+      "collected_utc": "2026-11-18T09:10:16.308Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "control-transfer-party-01-coin-before.json",
+      "url": "https://explorer.rayls.com/api?module=account&action=eth_get_balance&address=0x8aceb267fae872049ffe96a740b5b0dc3a6ecf88&block=13187102",
+      "collected_utc": "2026-11-18T09:10:52.082Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "control-transfer-party-01-coin-after.json",
+      "url": "https://explorer.rayls.com/api?module=account&action=eth_get_balance&address=0x8aceb267fae872049ffe96a740b5b0dc3a6ecf88&block=13187103",
+      "collected_utc": "2026-11-18T09:10:52.221Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "control-transfer-party-02-coin-before.json",
+      "url": "https://explorer.rayls.com/api?module=account&action=eth_get_balance&address=0x0000000000000000000000000000000000000400&block=13187102",
+      "collected_utc": "2026-11-18T09:10:52.370Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "control-transfer-party-02-coin-after.json",
+      "url": "https://explorer.rayls.com/api?module=account&action=eth_get_balance&address=0x0000000000000000000000000000000000000400&block=13187103",
+      "collected_utc": "2026-11-18T09:10:52.506Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "control-transfer-party-03-coin-before.json",
+      "url": "https://explorer.rayls.com/api?module=account&action=eth_get_balance&address=0x5eb12d076295cf23c44ed5d632d6b6a623e25592&block=13187102",
+      "collected_utc": "2026-11-18T09:10:52.662Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "control-transfer-party-03-coin-after.json",
+      "url": "https://explorer.rayls.com/api?module=account&action=eth_get_balance&address=0x5eb12d076295cf23c44ed5d632d6b6a623e25592&block=13187103",
+      "collected_utc": "2026-11-18T09:10:52.787Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "control-approve-party-01-coin-before.json",
+      "url": "https://explorer.rayls.com/api?module=account&action=eth_get_balance&address=0x1569a4bb96f22b00eb07fb4d556bc1ee8e06b8ba&block=14669451",
+      "collected_utc": "2026-11-18T09:10:52.949Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "control-approve-party-01-coin-after.json",
+      "url": "https://explorer.rayls.com/api?module=account&action=eth_get_balance&address=0x1569a4bb96f22b00eb07fb4d556bc1ee8e06b8ba&block=14669452",
+      "collected_utc": "2026-11-18T09:10:53.114Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "control-approve-party-02-coin-before.json",
+      "url": "https://explorer.rayls.com/api?module=account&action=eth_get_balance&address=0x0000000000000000000000000000000000000400&block=14669451",
+      "collected_utc": "2026-11-18T09:10:53.247Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    },
+    {
+      "file": "control-approve-party-02-coin-after.json",
+      "url": "https://explorer.rayls.com/api?module=account&action=eth_get_balance&address=0x0000000000000000000000000000000000000400&block=14669452",
+      "collected_utc": "2026-11-18T09:10:53.385Z",
+      "surface": "Public Explorer JSON response displayed in browser"
+    }
+  ]
+}

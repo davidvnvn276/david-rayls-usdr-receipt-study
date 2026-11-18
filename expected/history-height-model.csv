@@ -1,0 +1,5 @@
+case_id,lookup,requested_height,selected_history_height,matches_at_or_before_model,balance_units
+case-26,before,14676386,14646772,True,254455638976414746
+case-26,after,14676387,14646772,True,254455638976414746
+case-25,before,14676416,14646772,True,254455638976414746
+case-25,after,14676417,14676417,True,805907038976414746
