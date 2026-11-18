@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2400" height="1410" viewBox="0 0 2400 1410" role="img" aria-labelledby="title description">
-<title id="title">How far did the check go?</title><desc id="description">23 of 23 routes from one sending wallet reconciled with 174.114291 USDr in transfer-leg volume and 45.151340 USDr in calculated wallet debits. The RPC matched 29 receipts and 214 logs. Four of 37 state pairs were available and all four matched.</desc>
+<title id="title">How far did the check go?</title><desc id="description">23 original calls from one sending wallet reconciled, and four original direct wallet balance pairs matched. A separate follow-up added eight exact balance pairs on two later same-route calls and four exact fee debits from four different zero-Value payers.</desc>
 <defs>
   <pattern id="paper-grid" width="42" height="42" patternUnits="userSpaceOnUse"><path d="M42 0H0V42" fill="none" stroke="#d6d7e4" stroke-opacity="0.66" stroke-width="1.25"/></pattern>
   <marker id="arrow" viewBox="0 0 20 20" refX="18" refY="10" markerHeight="19" markerWidth="19" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 20 10 0 20z" fill="#121219"/></marker>
@@ -15,9 +15,9 @@
 <path d="M54 45H78M66 33V57" stroke="#b9baca" stroke-width="2" fill="none"/>
 <text x="96" y="94" text-anchor="start" font-family="DejaVu Sans Mono" font-size="31" font-weight="700" letter-spacing="1.25" fill="#5132c9">EVIDENCE COVERAGE  •  EXPLORER AND NODE</text>
 <text x="90" y="222" text-anchor="start" font-family="DejaVu Sans" font-size="100" font-weight="700" letter-spacing="-2" fill="#121219">How far did the check go?</text>
-<text x="96" y="291" text-anchor="start" font-family="DejaVu Sans" font-size="40" font-weight="400" letter-spacing="0" fill="#4f505e">28 indexed transactions + 2 targeted controls</text>
+<text x="96" y="291" text-anchor="start" font-family="DejaVu Sans" font-size="40" font-weight="400" letter-spacing="0" fill="#4f505e">The original receipt sample and the separate wallet follow-up.</text>
 <polygon points="96,356 1253,356 1289,392 1289,1244 132,1244 96,1208" fill="#121219" stroke="none" stroke-width="1"/>
-<text x="140" y="423" text-anchor="start" font-family="DejaVu Sans Mono" font-size="29" font-weight="700" letter-spacing="1.25" fill="#e5ff30">FEE ROUTE RECONCILIATION</text>
+<text x="140" y="423" text-anchor="start" font-family="DejaVu Sans Mono" font-size="29" font-weight="700" letter-spacing="1.25" fill="#e5ff30">ORIGINAL FEE ROUTE RECONCILIATION</text>
 <text x="131" y="564" text-anchor="start" font-family="DejaVu Sans" font-size="116" font-weight="700" letter-spacing="-4" fill="#fcfcff">23 of 23</text>
 <text x="139" y="624" text-anchor="start" font-family="DejaVu Sans" font-size="39" font-weight="400" letter-spacing="0" fill="#fcfcff">Same payer and route · 9 destination EIDs</text>
 <path d="M140 671H1244" stroke="#676374" stroke-width="3" fill="none"/>
@@ -30,18 +30,19 @@
 <text x="432" y="1107" text-anchor="start" font-family="DejaVu Sans" font-size="30" font-weight="700" letter-spacing="0" fill="#121219">Recorded movement includes</text>
 <text x="433" y="1149" text-anchor="start" font-family="DejaVu Sans" font-size="32" font-weight="400" letter-spacing="0" fill="#121219">forwarding and refunds.</text>
 <polygon points="1332,356 2269,356 2305,392 2305,1244 1368,1244 1332,1208" fill="#eae1ff" stroke="#5132c9" stroke-width="3"/>
-<text x="1376" y="422" text-anchor="start" font-family="DejaVu Sans Mono" font-size="30" font-weight="700" letter-spacing="1.25" fill="#5132c9">DIRECT MAINNET RPC</text>
-<text x="1368" y="545" text-anchor="start" font-family="DejaVu Sans" font-size="94" font-weight="700" letter-spacing="-3" fill="#121219">29 of 30</text>
-<text x="1376" y="611" text-anchor="start" font-family="DejaVu Sans" font-size="37" font-weight="400" letter-spacing="0" fill="#121219">Receipts matched · 214 raw logs</text>
-<path d="M1377 663H2260" stroke="#5132c9" stroke-width="2" fill="none"/>
-<text x="1368" y="793" text-anchor="start" font-family="DejaVu Sans" font-size="94" font-weight="700" letter-spacing="-3" fill="#121219">4 of 37</text>
-<text x="1376" y="849" text-anchor="start" font-family="DejaVu Sans" font-size="37" font-weight="400" letter-spacing="0" fill="#121219">Complete historical balance pairs</text>
-<text x="1376" y="910" text-anchor="start" font-family="DejaVu Sans" font-size="32" font-weight="400" letter-spacing="0" fill="#4f505e">All 4 matched. Other state was pruned.</text>
-<polygon points="1377,987 2233,987 2256,1010 2256,1170 1400,1170 1377,1147" fill="#fcfcff" stroke="#b9baca" stroke-width="2"/>
-<text x="1414" y="1043" text-anchor="start" font-family="DejaVu Sans Mono" font-size="25" font-weight="700" letter-spacing="1.25" fill="#5132c9">SEPARATE EXPLORER BALANCE CHECK</text>
-<text x="1411" y="1116" text-anchor="start" font-family="DejaVu Sans" font-size="37" font-weight="700" letter-spacing="-0.4" fill="#121219">34 of 37 matched  ·  3 open differences</text>
+<text x="1376" y="422" text-anchor="start" font-family="DejaVu Sans Mono" font-size="27" font-weight="700" letter-spacing="1.25" fill="#5132c9">ORIGINAL DIRECT MAINNET RPC</text>
+<text x="1376" y="516" text-anchor="start" font-family="DejaVu Sans" font-size="37" font-weight="700" letter-spacing="0" fill="#121219">29 of 30 receipts matched · 214 logs</text>
+<text x="1376" y="581" text-anchor="start" font-family="DejaVu Sans" font-size="36" font-weight="400" letter-spacing="0" fill="#121219">4 of 37 balance pairs available and exact</text>
+<path d="M1377 643H2260" stroke="#5132c9" stroke-width="2" fill="none"/>
+<text x="1376" y="713" text-anchor="start" font-family="DejaVu Sans Mono" font-size="28" font-weight="700" letter-spacing="1.25" fill="#5132c9">SEPARATE FOLLOW-UP</text>
+<text x="1367" y="839" text-anchor="start" font-family="DejaVu Sans" font-size="103" font-weight="700" letter-spacing="-3" fill="#121219">12</text>
+<text x="1561" y="820" text-anchor="start" font-family="DejaVu Sans" font-size="37" font-weight="700" letter-spacing="0" fill="#121219">exact balance comparisons</text>
+<text x="1376" y="932" text-anchor="start" font-family="DejaVu Sans" font-size="32" font-weight="400" letter-spacing="0" fill="#121219">8  ·  Two later calls on the same bridge route</text>
+<text x="1376" y="999" text-anchor="start" font-family="DejaVu Sans" font-size="32" font-weight="400" letter-spacing="0" fill="#121219">4  ·  Four zero-Value calls, four other payers</text>
+<polygon points="1376,1061 2239,1061 2257,1079 2257,1169 1394,1169 1376,1151" fill="#fcfcff" stroke="#b9baca" stroke-width="2"/>
+<text x="1402" y="1126" text-anchor="start" font-family="DejaVu Sans" font-size="30" font-weight="700" letter-spacing="0" fill="#121219">One RPC endpoint. No state-root proof.</text>
 <path d="M94 1307H2306" stroke="#b9baca" stroke-width="2" fill="none"/>
-<text x="96" y="1362" text-anchor="start" font-family="DejaVu Sans" font-size="29" font-weight="400" letter-spacing="0" fill="#4f505e">Destination delivery untested. No node state for the three indexed balance differences.</text>
+<text x="96" y="1362" text-anchor="start" font-family="DejaVu Sans" font-size="29" font-weight="400" letter-spacing="0" fill="#4f505e">Original indexed balances: 34 of 37 matched. The three exceptions remain unresolved.</text>
 <polygon points="1856,1328 2295,1328 2307,1340 2307,1380 1868,1380 1856,1368" fill="#bda5ff" stroke="none" stroke-width="1"/>
 <text x="2082" y="1363" text-anchor="middle" font-family="DejaVu Sans Mono" font-size="26" font-weight="700" letter-spacing="0.7" fill="#121219">SAMPLE BOUNDARY</text>
 </svg>

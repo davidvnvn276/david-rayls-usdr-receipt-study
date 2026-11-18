@@ -1,101 +1,224 @@
 # Verify the Rayls USDr receipt study
 
-This package lets you check how much a wallet spent in USDr after a refund and gas. It preserves the original Explorer capture and adds a separate calculation and a saved mainnet RPC comparison. Start with the [article](Article_EN.md) for the result, or follow the steps below to reproduce it.
+This guide lets you reproduce the article’s numbers from the saved evidence, trace a claim back to an actual request and response, and distinguish a verified calculation from a missing historical observation. The publication bundle preserves the original data, the reviewed RPC capture, the six follow-up transactions, and the tests from the V2 study. The article and figures use those same results.
 
-**Quick result:** The caller of the [worked transaction](https://explorer.rayls.com/tx/0x29a651bbd3d52b4a6a961358870275113d5757468b476a885b7618ba87d5c4d2) spent **2.603705590440678034 USDr**. Its top-level Value, summed transfer legs and actual wallet debit are three different measurements.
+The internal links in this guide are relative to the extracted ZIP. Open the `README.md` inside that folder to follow them.
 
-## 1. Open the package and check Python
+**Worked result:** At Rayls mainnet block **14,723,934**, the [caller’s transaction](https://explorer.rayls.com/tx/0x29a651bbd3d52b4a6a961358870275113d5757468b476a885b7618ba87d5c4d2) carried **3.356289694836881444 USDr** in top-level Value. The four USDr transfer logs sum to **10.068869084510644332 USDr**. After the refund and network gas, the caller’s observed debit was **2.603705590440678034 USDr**. Each number answers a different question.
 
-On Windows, extract the ZIP in File Explorer, open the folder containing `verify_review.py`, and select **Open in Terminal**. On macOS or Linux, extract the ZIP and use Terminal to change into that folder. Use Python 3.10 or later; the reviewed run used Python 3.12.14 on Linux. The scripts use only the Python standard library. They need no API key, wallet, Docker or Node.js.
+| If you want to… | Start here |
+| --- | --- |
+| Read the argument before checking data | [Article in HTML with figures](Article_EN.html) or [article in Markdown](Article_EN.md) |
+| Run every archived check with one command | [1. Unpack and run offline](#1-unpack-and-run-offline) |
+| Check the headline by hand | [3. Verify the worked transaction](#3-verify-the-worked-transaction) |
+| Check cases, controls, or missing observations | [4. Separate the samples and exceptions](#4-separate-the-samples-and-exceptions) and [5. Test failures](#5-test-failures) |
+| Go from one article sentence to its evidence | [Claim-by-claim evidence map](EVIDENCE_MAP.md) |
 
-Windows (PowerShell):
+## 1. Unpack and run offline
+
+**Requirements:** Python 3.10 or newer, using only its standard library. No package installation, API key, wallet, Docker, or network connection is required for the saved-data replay. The recorded clean-extraction run used Python 3.12.14 on Linux.
+
+### Windows, from File Explorer
+
+1. Download the full ZIP. Right-click it and choose **Extract All**. Wait for extraction to finish; do not run files from the compressed folder view.
+2. Open the extracted `david-week3-usdr-final` folder. It should show **README.md**, **verify_review.py**, **SHA256SUMS**, and the `expected`, `evidence`, and `original` folders together. If you see another folder with the same name, open it.
+3. In that folder’s address bar, type `powershell` and press **Enter**. In the window that opens, run:
 
 ```powershell
+Get-Location
+Get-Item .\verify_review.py
 py -3 --version
 py -3 verify_review.py
 ```
 
-If the Python launcher is unavailable but `python --version` works, use `python` instead of `py -3`. On macOS or Linux:
+If `py` is not recognized but `python --version` shows Python 3.10 or later, use `python verify_review.py`. If both commands are unavailable, install [Python](https://www.python.org/downloads/) and reopen the terminal. A Python version number is sufficient; there is no `pip install` step for the verifier.
+
+If you open PowerShell first, use `Set-Location "C:\path\to\david-week3-usdr-final"` with the folder you actually extracted. Quotes keep spaces in the path together.
+
+### macOS or Linux
+
+Extract the ZIP, open a terminal, and go to the extracted folder. Replace the example path with your own:
 
 ```bash
+cd "/path/to/david-week3-usdr-final"
+pwd
+ls verify_review.py
 python3 --version
 python3 verify_review.py
 ```
 
-The default command runs offline. It checks the package manifest, reruns the original and separate calculations, runs six accounting and evidence controls, and compares eleven regenerated files with their saved versions. It also checks that the RPC replies correspond to their saved JSON-RPC requests and block tags. The expected lines near the end are:
+### What success looks like
+
+The verifier checks the reviewed SHA-256 manifest, runs the original capture’s checks, recalculates the route and balance results, replays archived RPC request/response pairs, and runs eight local controls. It compares all twelve regenerated artifacts with the bundled versions byte for byte. Look for these lines near the end:
 
 ```text
-PASS: Five original and six reviewed outputs reproduced byte for byte.
-OBSERVED: Explorer 34/37 paired balances; direct RPC 4/37 available, 4/4 exact.
-OBSERVED: RPC returned 29/30 receipts; 132 state reads were pruned.
+PASS: Five original and seven reviewed outputs reproduced byte for byte.
+OBSERVED: Original Explorer 34/37 paired balances; original RPC 4/37 available, 4/4 exact.
+OBSERVED: Follow-up six transactions; 12/12 direct balance comparisons exact.
+OBSERVED: Original RPC 29/30 receipts; eight follow-up account-proof requests hit the proof window.
+A pass checks saved data and calculations. It does not independently authenticate chain state.
 ```
 
-A `PASS` here checks the saved evidence and calculations. It does not mean that all historical reads were available or that an independent party authenticated the chain.
+A passing replay is compatible with missing historical results. The missing results are recorded inputs, so silently replacing them with zero or discarding the affected rows would break the audit.
 
-## 2. Keep your regenerated results
+## 2. Keep the files you rebuild
 
-Run the same verifier with an output folder that does not already exist:
+Without arguments, the verifier uses a temporary folder. To keep the rebuilt reports, use a **new** output directory. If `runs/review-01` already exists, choose `runs/review-02` instead.
 
 ```powershell
-py -3 verify_review.py --out runs/check-01
+py -3 verify_review.py --out runs/review-01
+Get-ChildItem .\runs\review-01\reviewed
 ```
 
 ```bash
-python3 verify_review.py --out runs/check-01
+python3 verify_review.py --out runs/review-01
+ls runs/review-01/reviewed
 ```
 
-Open the CSV files in a text editor for full precision. If you use a spreadsheet, set the large integer columns to text; several values are larger than typical spreadsheet numeric precision. USDr has 18 decimals. The underlying accounting is done in exact integer units; figures round display values.
+The run writes five files under `runs/review-01/original/` and seven under `runs/review-01/reviewed/`. The reference outputs and captures remain unchanged. Use a text editor for CSV and JSON with large integers; spreadsheet defaults may round the last digits. USDr has **18 decimals**. The analysis uses integers in the smallest units, while figures use rounded display amounts.
 
-| Open this file | What it shows |
+| Saved output | What to look for |
 | --- | --- |
-| [expected/review-summary.json](expected/review-summary.json) | Main counts, exact worked-transaction values, balances that differed and zero-Value examples. |
-| [expected/route-audit.csv](expected/route-audit.csv) | All 23 routes, receipt components, packet GUIDs, destination EIDs, and one integer funding comparison per route. |
-| [expected/wallet-balances.csv](expected/wallet-balances.csv) | All 37 indexed account/block pairs and the difference compared with logs and gas. |
-| [expected/network-fees.csv](expected/network-fees.csv) | Base and priority portions of the gas fee for the 11 sampled one-transaction blocks. |
-| [expected/history-height-model.csv](expected/history-height-model.csv) | The most recent recorded history height at or before each of the four mint/send lookup heights. |
-| [expected/rpc-summary.json](expected/rpc-summary.json) | What the direct mainnet RPC returned for each transaction and balance pair, including unavailable reads. |
-| [original/evidence/explorer/capture-index.json](original/evidence/explorer/capture-index.json) | Original URLs, collection times, sample selection and filename for each of the 132 Explorer responses. |
-| [evidence/source-identities.json](evidence/source-identities.json) | Upstream source revisions, Git blob identities and three published Stargate addresses used in the analysis. |
+| [expected/review-summary.json](expected/review-summary.json) | `hero` for the worked transaction, `counts` for the original sample, `balance_exceptions` for all three indexed differences |
+| [expected/route-audit.csv](expected/route-audit.csv) | All 23 original credit calls: `net_debit_units`, `refund_units`, `transfer_leg_sum_units`, executor and DVN amounts, packet GUID, and destination EID |
+| [expected/wallet-balances.csv](expected/wallet-balances.csv) | The 37 original indexed pairs, the amount expected from logs and gas, and `explorer_minus_expected_units` |
+| [expected/network-fees.csv](expected/network-fees.csv) | Gas split into base and priority portions for the 11 sampled one-transaction blocks |
+| [expected/history-height-model.csv](expected/history-height-model.csv) | The history row at or before each of the four requested mint/send heights used in the indexer explanation |
+| [expected/rpc-summary.json](expected/rpc-summary.json) | Receipt, log, and balance comparison coverage; raw deltas and missing reads in `state_rows` |
+| [expected/followup-summary.json](expected/followup-summary.json) | Two later bridge cases, four zero-Value cases, and eight historical account-proof errors |
 
-## 3. Verify the headline example by hand
+The [original capture index](original/evidence/explorer/capture-index.json) records the selected transactions, 132 Explorer response files, their URLs, and collection times. [Source identities](evidence/source-identities.json) records the upstream revisions and deployment references used in the analysis. Those files document provenance; they do not add another operator for the RPC observations.
 
-1. Open the [mainnet transaction](https://explorer.rayls.com/tx/0x29a651bbd3d52b4a6a961358870275113d5757468b476a885b7618ba87d5c4d2) at block **14,723,934**. The original Explorer files are [transaction](original/evidence/explorer/bridge-01-transaction.json), [logs](original/evidence/explorer/bridge-01-logs.json) and [State](original/evidence/explorer/bridge-01-state-changes.json).
-2. In the saved logs, four events are transfers from the USDr address ending in `0400`. The caller sent **3.356289694836881444**, and EndpointV2 refunded **0.774528391116203410** to that caller. The other two legs forward funds between contracts.
-3. Multiply gas used **317,481** by effective gas price **69,120,000,000** in smallest units. The result corresponds to **0.021944286720 USDr**.
-4. Subtract the refund from Value and add gas: **2.603705590440678034 USDr**. In [the RPC summary](expected/rpc-summary.json), look for `case-01` and the caller beginning with `0xe37f7c80`. Compare `native_before_units` and `native_after_units`; the difference is `-2603705590440678034`. Compare those fields with the corresponding `precompile_*` fields as well.
-5. The **10.068869084510644332 USDr** sum of the four logs counts all contract movements. That answers a different question than the caller’s net debit. The executor and DVN amounts partition the fee sent to the library; adding them to that transfer again would double count it.
+## 3. Verify the worked transaction
 
-## 4. Check the sample and the exceptions
+All amounts below refer to the Rayls source chain, **chain ID 72957**. Use the complete hash to identify the transaction, rather than its label or a rounded amount. The live Explorer is convenient for orientation, but the frozen files are the inputs to the replay.
 
-- The original pages contain **100 USDr transfer entries** covering 28 transactions on 17–18 November 2026 UTC. The direct USDr transfer and USDr approval are separate controls. The 23 credit-message calls came from one payer, used one sending route, and had nine destination endpoint IDs. EIDs are messaging identifiers; they are distinct from chain IDs.
-- Across those 23 calls, the recorded transfer legs total **174.114291420410411853 USDr** and the calculated debits total **45.151339638677541506 USDr**. Every `value_minus_floor_13_over_10_fee_units` entry is zero. These observations do not establish a universal fee formula.
-- In `wallet-balances.csv`, filter `explorer_minus_expected_units` for nonzero rows. The mint and following send fit the saved history’s at-or-before lookup; their combined window matches exactly. That leaves both individual point comparisons open. The direct transfer recipient is the third exception.
-- In `rpc-summary.json`, a field with `null` due to missing/pruned state does not represent a zero balance. The direct RPC returned 30 envelopes and 29 receipts, with 214 matching raw logs. The 4 available historical balance pairs were all from the headline example. The truncated historical coverage means the node did not settle the three indexed exceptions.
+### 3.1 Match the receipt and four USDr logs
 
-See [Evidence map](EVIDENCE_MAP.md) for each article claim, where to find the supporting data and the limit of that evidence.
+1. Open the [worked transaction](https://explorer.rayls.com/tx/0x29a651bbd3d52b4a6a961358870275113d5757468b476a885b7618ba87d5c4d2) and identify its payer `0xe37f7c80ced04c4f243c0fd04a5510d663cb88b5`, top-level Value, successful receipt, and block **14,723,934**.
+2. In the saved [request batch](evidence/rpc/01.request.json) and [response batch](evidence/rpc/01.response.json), match **ID 3** for the transaction envelope and **ID 4** for the receipt. Use the matching transaction and block identity before reading the amounts.
+3. In the [eight saved Explorer logs](original/evidence/explorer/bridge-01-logs.json), the four USDr transfer events have indexes **4–7**, the emitter `0x0000000000000000000000000000000000000400`, and first topic `0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef`. The next two topics encode the sender and recipient. The hex `data` field is the integer amount.
+4. Separate the legs by their parties. The caller sends Value to CreditMessaging; that contract forwards the same amount to EndpointV2. EndpointV2 sends the remaining fee to the send library and returns the refund to the original caller. The four legs are movements; the payer does not pay every leg again.
 
-The [article preview](Article_EN.html) places the four figures alongside the corresponding evidence. The [figure index](visuals/figures.json) gives dimensions, alternative text and placement for each editable SVG and PNG.
+### 3.2 Rebuild the cost
 
-## 5. Repeat the direct RPC comparison (optional)
+| Measurement | Exact amount in USDr | Where to check it |
+| --- | ---: | --- |
+| Caller’s top-level Value | 3.356289694836881444 | `hero.gross_value_units` and the transaction’s `value` |
+| Refund to the caller | 0.774528391116203410 | `hero.refund_units` and the EndpointV2 → caller log |
+| Message fee after the refund | 2.581761303720678034 | `hero.message_fee_units` and the send-library leg |
+| Network gas fee | 0.021944286720000000 | `317,481 × 69,120,000,000` smallest units |
+| Caller net debit | 2.603705590440678034 | Value minus refund plus network gas |
+| Gross sum of all four legs | 10.068869084510644332 | `hero.transfer_leg_sum_units`; includes forwarding and the refund |
 
-The archived RPC capture is under [evidence/rpc](evidence/rpc). Each numbered batch contains its request, response and transport record. To rerun the comparison from those files, use:
+The exact integer debit calculation is:
 
-```bash
-python3 rpc_evidence.py --from-saved evidence/rpc
+```text
+3,356,289,694,836,881,444
+- 774,528,391,116,203,410
++  21,944,286,720,000,000
+=2,603,705,590,440,678,034 smallest units
 ```
 
-On Windows, use `py -3` in place of `python3`. To send the same fixed set of 251 **read-only** queries to the public Rayls RPC, choose a new directory:
+In `route-audit.csv`, `executor_fee_units` and `dvn_fee_units` for this receipt sum to the message fee. They describe the component amounts of the observed fee leg, not a second amount to add to the payer’s debit. The separate network gas fee is computed from gas used and effective gas price.
 
-```bash
-python3 rpc_evidence.py --collect runs/rpc-fresh --report runs/rpc-fresh.json
+### 3.3 Check the payer’s balance independently of the log sums
+
+In the [balance requests](evidence/rpc/09.request.json) and their [replies](evidence/rpc/09.response.json), **IDs 104–105** are native balance reads for that payer at blocks **14,723,933** and **14,723,934**, in that order. **IDs 106–107** call `balanceOf` at the USDr precompile at the same address and heights. The request IDs connect each reply to its method, address, and block tag.
+
+In `rpc-summary.json`, find the `state_rows` entry for `case-01` and the payer above:
+
+| Payer balance | Before | After |
+| --- | ---: | ---: |
+| Native balance, smallest units | 358315996176546923848 | 355712290586106245814 |
+| `balanceOf`, smallest units | 358315996176546923848 | 355712290586106245814 |
+
+The signed change `after − before` equals **−2603705590440678034** smallest units. The debit is the magnitude of that change. The two balance interfaces agree for these reads; they do not make two wallets or two debits. [The archived Explorer State view](original/evidence/explorer/bridge-01-state-changes.json) lists different coin and token changes. In this worked example, its coin change is more negative than the indexed payer change by exactly the refund. Use the tied receipt and block-bound balance pair to answer the payer-debit question.
+
+## 4. Separate the samples and exceptions
+
+The sample groups have different selection methods. None is a count of all Rayls bridge traffic, independent routes, or users.
+
+| Group | Selection and result | How to check |
+| --- | --- | --- |
+| Original transfer pages and controls | 100 indexed transfer entries correspond to 28 transactions. A direct transfer and an approval are two separate controls. The direct RPC returned 30 transaction envelopes and 29 receipts, with 214 matching raw logs. | Open `original/evidence/explorer/capture-index.json` and `expected/rpc-summary.json`. |
+| Original credit calls | 23 calls, one payer and one sending route, nine distinct destination endpoint IDs. Values and receipts reconcile as reported. An endpoint ID is a messaging identifier and is not necessarily a chain ID. | In `expected/route-audit.csv`, check `payer`, `credit_messaging`, `destination_eid`, and the packet and fee fields. |
+| Later bridge follow-up | The two latest observed USDr-log transactions above the original sample end in a fixed block scan were selected before reading their balances. Eight exact balance pairs across these two calls; the payer and route are still the same. | In `followup-summary.json`, open `scan` and `separate_recent_routes`. |
+| Zero-Value follow-up | Four successful zero-Value calls from four different payers, with their own one-transaction blocks. No USDr transfer events in these receipts; the payer debit equals network gas in each. | In `followup-summary.json`, open `zero_value_cases` and inspect each payer’s `balance`. |
+
+### 4.1 What the follow-up actually tests
+
+For the two later bridge cases at blocks **14,728,392** and **14,729,950**, compare `value_plus_gas_units` with `net_debit_units`. The first exceeds the second by the exact refund in both. Then compare `transfer_leg_sum_units` with `net_debit_units` to see the effect of summing intermediary movements. The [follow-up captures](evidence/followup/) contain the receipt plus the parent and inclusion block reads for both cases.
+
+For a second way to verify the method, open `alternate-01` at block **14,734,206** in the same summary. Its Value is zero. Its payer goes from **1** to **0.997187344 USDr**, an exact **0.002812656 USDr** debit. The archived [receipt requests](evidence/followup/alternate-01-receipt.request.json) and [responses](evidence/followup/alternate-01-receipt.response.json) and [payer reads](evidence/followup/alternate-01-payer.response.json) preserve the inputs. A receipt may contain events from other contracts, so check the USDr emitter before using a log as USDr movement.
+
+### 4.2 How to read missing or differing results
+
+- **Indexed balance comparisons:** 34/37 match, including 16 unchanged balances. Filter `wallet-balances.csv` for nonzero `explorer_minus_expected_units` to see the three exceptions. For the two observations on the funding-mint/later-send wallet, the combined **0.5514514 USDr** gain matches, while the two individual point comparisons remain unresolved. The separate older transfer recipient is the third exception. The history-height model is an explanation consistent with the saved rows, not a replacement of any observations.
+- **Direct historical balances:** 4/37 original pairs were available; all four match. The other 33 pairs were pruned, giving 132 failed state reads across their before/after native and precompile queries. The old direct-transfer receipt returned `null`. Neither a pruned read nor a null receipt is a zero balance or evidence that a transaction did not occur.
+- **Proof requests:** Eight saved historical `eth_getProof` queries returned error `-32602`, with the message `distance to target block exceeds maximum proof window`. They are under `unavailable_account_proofs`. The paired balance observations come from one official RPC and are not authenticated account proofs. The capture does not establish a separate operator or authenticate a header against a consensus anchor.
+
+## 5. Test failures
+
+The full offline command runs the tests below on **local copies of saved inputs**. These are controls for the stated claims, not additional observed network transactions.
+
+| Local check | What it tests |
+| --- | --- |
+| Treat gross forwarding as the total cost | The intermediary movements and refund cannot stand in for the net debit |
+| Change a fee component while keeping the legs | The executor and DVN amounts no longer reconcile with the message charge |
+| Count an approval or another asset as a USDr transfer | The result has to use the specified USDr emitter and event |
+| Hide the three unresolved indexed comparisons | The exception set is preserved and checked |
+| Keep four valid transfer legs but change packet destination | Those legs alone do not validate the messaging destination |
+| Turn pruned state into a zero observation | An explicit state gap cannot be counted as a measured zero |
+| Retag the after-balance with the parent height | The block binding is checked along with the value |
+| Edit both balance interfaces by the same smallest unit | Agreement between the interfaces is insufficient if their delta disagrees with the receipt |
+
+The four earlier controls are in [original/tests](original/tests/); the four reviewed controls are in [tests](tests/). From the package root, the exact archived comparison can also be rerun in parts:
+
+```powershell
+py -3 rpc_evidence.py --from-saved evidence/rpc
+py -3 verify_followup.py
+py -3 -m unittest discover -s tests -v
 ```
 
-Create or use the `runs` directory within the extracted package. The script queries chain ID, then saves batches of transaction, receipt, block and historical balance requests. The historical `eth_call` only calls USDr `balanceOf`; no transaction is signed or sent. Fresh coverage can differ. The endpoint can return pruned state, null receipts, or transport failures, which are reported separately. A new read does not overwrite the original Explorer or RPC collection. A provider with archive data is needed for an exact read at any unavailable height.
+On macOS or Linux, substitute `python3` for `py -3`. Use the full verifier when you also want the manifest, the original dataset’s tests, and byte-for-byte output comparisons in one run.
 
-If you are reviewing the GitHub version, the **Verify saved USDr receipt evidence** workflow runs the same offline command. Its logs and status are visible under the repository’s Actions tab when a run is available.
+## 6. Optional fresh RPC read
 
-## What this package establishes
+This is separate from the offline checks. Choose a **new** path under `runs` so the archived responses remain frozen. The script makes 251 read-only requests for the original comparison. It never signs a transaction or submits one to the network.
 
-The calculations tie transaction Value, transfer and messaging events, gas and wallet balances together for the specified samples. The same official network can be queried by a node and by an indexer; the study does not establish independent operation of those observation sources. Matching hashes and a passing checksum do not substitute for an authenticated state proof. No destination execution, private Sovereign activity, production pricing or network-wide adoption is inferred from this sample.
+```powershell
+py -3 rpc_evidence.py --collect runs/rpc-fresh-01 --report runs/rpc-fresh-01.json
+```
 
-The unchanged original files are under `original/` with their original manifest. This reviewed package has its own `SHA256SUMS`.
+```bash
+python3 rpc_evidence.py --collect runs/rpc-fresh-01 --report runs/rpc-fresh-01.json
+```
+
+The query set is fixed. It includes chain ID, transaction, receipt, block, and historical balance requests; its `eth_call` reads `balanceOf`. Request, response, and transport metadata are saved in the new folder. A later run may have different historical coverage or transport errors. Compare the exact block and method before comparing values. This command is not required for reproduction of the archived study.
+
+If reviewing a repository run, the **Verify saved USDr receipt evidence** workflow uses the offline command. It pins **Python 3.12.14 on Ubuntu 24.04** and **Python 3.13.11 on Windows 2025**, with UTF-8 mode enabled on both. These exact versions have distributions for their selected runners. The earlier Windows setup requested Python 3.12.14, which has no Windows distribution in the setup-python version manifest; it failed before the evidence checks started. A configured workflow and an executed job are different records; verify the result against the repository revision you are reviewing.
+
+## 7. Troubleshoot the offline run
+
+| What you see | What to do |
+| --- | --- |
+| Python cannot open `verify_review.py` | Check `Get-Location` or `pwd`. Open the extracted folder that actually contains the script. |
+| Command `py` or `python3` not found | Use the working Python command for your system and confirm the version is at least 3.10. |
+| Output directory already exists | Use another new `runs/` directory. The archived inputs should not be overwritten. |
+| Missing path, wrong hash, or an extra file in the manifest check | Extract a fresh copy. Keep the archived files unchanged and put your regenerated reports in `runs/` or outside the package. For editing or analysis, use separate copies. |
+| RPC errors when running the optional fresh command | Inspect that run’s transport and message fields. Run the default offline command to check the archived evidence. |
+| Spreadsheet values have lost digits | Reopen the raw CSV or JSON in a text editor, or import the smallest-unit columns as text. |
+
+## 8. Article and figures
+
+The [standalone HTML](Article_EN.html) includes the complete article and the four embedded PNGs. [Markdown](Article_EN.md) is the same text. The figure index [visuals/figures.json](visuals/figures.json) includes alt text and placement, and the PNGs have matching SVG sources.
+
+| Figure | Size | What it shows |
+| --- | --- | --- |
+| [00-cover-usdr.png](visuals/00-cover-usdr.png) | 2500 × 1000, 5:2 | Value, sum of legs, and net debit in the worked transaction |
+| [01-usdr-refund-route.png](visuals/01-usdr-refund-route.png) | 2400 × 1350 | Where the payer’s Value, refund, and gas enter the calculation |
+| [02-usdr-value-examples.png](visuals/02-usdr-value-examples.png) | 2400 × 1440 | What can occur in a zero-Value transaction |
+| [03-usdr-evidence-coverage.png](visuals/03-usdr-evidence-coverage.png) | 2400 × 1410 | The separate original and follow-up evidence coverage |
+
+The study establishes how the inputs reconcile for the selected source-chain cases. It does not establish destination delivery, private Sovereign activity, a universal pricing formula, network-wide usage, or independently authenticated chain state. The unchanged original inputs and original manifest remain under `original/`.

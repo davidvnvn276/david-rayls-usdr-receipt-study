@@ -2,7 +2,7 @@
 
 One Rayls transaction showed **3.356290 USDr** under Value. Its four USDr transfer logs added up to **10.068869 USDr**. The sending wallet spent **2.603706 USDr**, including gas. I checked that last number against the wallet’s balance on the mainnet RPC.
 
-The difference is a refund and the way the logs record the same funds moving through several contracts. Here’s how to tell those numbers apart when reading a Rayls transfer, swap or bridge receipt.
+The difference comes from a refund and the way the logs record money moving through several contracts. I also checked two later calls on that route and four zero-Value calls from different senders. Together, they show how to read the receipt for the wallet you care about.
 
 ## Why do native USDr and the token view show the same funds?
 
@@ -39,7 +39,11 @@ Every sampled call reconciled to the smallest USDr unit. Adding all four legs on
 
 I also found that in all 23 calls, the initial Value was the billed message fee multiplied by **13/10**, rounded down in the smallest unit. Refunds therefore returned about **23.08% of the initial Value**, before gas. This describes one payer’s observed funding pattern. It does not establish a Stargate pricing rule or a quote for a retail transfer.
 
+In a separate scan at a fixed head block, I selected the latest two transactions with USDr transfer logs after the original sample, before reading their balances. The same payer spent **2.067085254607679666 USDr** at [block 14,728,392](https://explorer.rayls.com/tx/0xca4362cff32cb6517ff004c693484d6b98cd416f013c74d7a677cd1c054328bf) and **1.716349347288480000 USDr** at [block 14,729,950](https://explorer.rayls.com/tx/0x81d8c4d3dd5298dcadcf24873ea5327ee93d113b5dc6dea53d0111226c8b8a06). All eight before/after account comparisons matched the receipts. In both calls, using Value plus gas would overstate the debit by exactly the refund.
+
 ## What can move when the Value field is zero?
+
+In one [new contract call at block 14,734,206](https://explorer.rayls.com/tx/0xc908fc4984fb3a337c6db440cd849f3b36bcc1b4e63876a9b91ef7954becdcee), Value was zero and the receipt had no USDr transfer log. The payer’s native balance went from **1** to **0.997187344 USDr**: an exact **0.002812656 USDr** gas debit. I observed that same relationship in **four calls from four distinct payers**, each in its own one-transaction block. This checks the payer’s USDr cost; other application outcomes need evidence of their own.
 
 | Example | What the USDr evidence showed |
 | --- | --- |
@@ -50,9 +54,11 @@ I also found that in all 23 calls, the initial Value was the billed message fee 
 
 ## Which balance evidence was available?
 
-The direct mainnet RPC cross-check matched **30 transaction envelopes and 29 receipts**, including **214 raw logs**, to the saved Explorer data. One receipt, for the older direct transfer control, returned null. The node returned balances from both interfaces at both heights for **4 of 37** account/block comparisons. Those four were all in the opening example and matched the receipt. The other 33 state pairs were unavailable on the queried node because the state had been pruned.
+For the original sample, the mainnet RPC cross-check matched **30 transaction envelopes and 29 receipts**, including **214 raw logs**, to the saved Explorer data. The old transfer-control receipt returned null. Of **37** historical balance pairs, **4** were available and all matched; the other 33 were pruned. The follow-up added **12 exact balance comparisons in six separate transactions**. I keep those counts separate because the selection methods differ.
 
-For the Explorer’s indexed balances, **34 of 37** comparisons across 11 one-transaction blocks matched, including 16 unchanged balances. Two of the three exceptions came from the same wallet. It received 4.552661 USDr in the funding example, then sent 4 USDr and paid gas. Its indexed balance rose **0.5514514 USDr** over the combined interval, exactly the expected net change. The individual readings fit a lookup that uses the latest recorded balance at or before the requested height; they do not resolve the exact mint-block balance. The third exception, the direct transfer recipient, remains unresolved. The saved data keeps all three.
+The original Explorer’s indexed balances matched **34 of 37** comparisons, including 16 unchanged balances. Two exceptions involve the funding mint and the later 4 USDr send by the same wallet. The combined indexed gain, **0.5514514 USDr**, reconciles exactly, but neither point reading settles the timing. The third exception is the old transfer recipient. The package retains all three and the underlying balance-history rows.
+
+All direct state reads used the same Rayls RPC. I requested eight account proofs for the worked case and selected follow-ups; the node returned its historical proof-window error on all eight. The balances are fixed-height RPC observations. The study does not authenticate them against state roots, or check destination delivery for the bridge packets.
 
 ## How to check your own receipt
 
@@ -62,7 +68,7 @@ For the Explorer’s indexed balances, **34 of 37** comparisons across 11 one-tr
 
 If you need to fund gas, [Rayls’ Get USDr page](https://dapp.rayls.com/gas-token) is a starting point. The receipt can tell you which assets moved on Rayls and how much the wallet paid there.
 
-The companion evidence package includes the raw Explorer and RPC responses, all transaction hashes, exact integer calculations and a step-by-step offline verifier. It also separates node-confirmed results from indexed readings, so you can reproduce the math without an archive provider.
+The evidence package includes the selection records, raw RPC requests and replies, exact calculations and an offline verifier. Run `python verify_review.py` from the extracted folder to check both datasets and the controls. The archived proof and pruning errors remain visible in the results.
 
 ## Sources
 
@@ -70,3 +76,4 @@ The companion evidence package includes the raw Explorer and RPC responses, all 
 - [Stargate CreditMessaging source and refund forwarding](https://github.com/stargate-protocol/stargate-v2/blob/348621c5430064e8d79445b8c1b8136fe3fbd967/packages/stg-evm-v2/src/messaging/CreditMessaging.sol#L17-L41)
 - [LayerZero packet layout](https://github.com/LayerZero-Labs/LayerZero-v2/blob/9c741e7f9790639537b1710a203bcdfd73b0b9ac/packages/layerzero-v2/evm/protocol/contracts/messagelib/libs/PacketV1Codec.sol)
 - [Blockscout reference for returning a balance by block](https://docs.blockscout.com/devs/apis/rpc/account#return-balance-from-a-provided-block) and [upstream indexed lookup implementation](https://github.com/blockscout/blockscout/blob/731015d88d7e73623f2a3c097e241bc82b04ea7a/apps/explorer/lib/explorer/etherscan/blocks.ex#L25-L35)
+- [EIP-1186: account and storage proof RPC](https://eips.ethereum.org/EIPS/eip-1186)

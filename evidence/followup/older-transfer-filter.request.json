@@ -1,0 +1,1 @@
+[{"jsonrpc":"2.0","id":1,"method":"eth_getLogs","params":[{"fromBlock":"0xe0c2fd","toBlock":"0xe0ceb4","address":"0x0000000000000000000000000000000000000400","topics":["0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef"]}]}]

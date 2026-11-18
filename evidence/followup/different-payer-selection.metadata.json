@@ -1,0 +1,5 @@
+{
+  "url": "https://explorer.rayls.com/api/v2/transactions?filter=validated",
+  "started_utc": "2026-11-18T12:31:06.906310+00:00",
+  "finished_utc": "2026-11-18T12:31:14.433039+00:00"
+}

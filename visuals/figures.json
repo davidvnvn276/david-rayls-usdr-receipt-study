@@ -28,7 +28,7 @@
     "width": 2400,
     "height": 1410,
     "title": "How far did the check go?",
-    "alt": "23 of 23 routes from one sending wallet reconciled with 174.114291 USDr in transfer-leg volume and 45.151340 USDr in calculated wallet debits. The RPC matched 29 receipts and 214 logs. Four of 37 state pairs were available and all four matched.",
+    "alt": "23 original calls from one sending wallet reconciled, and four original direct wallet balance pairs matched. A separate follow-up added eight exact balance pairs on two later same-route calls and four exact fee debits from four different zero-Value payers.",
     "placement": "After: Which balance evidence was available?"
   }
 ]

@@ -45,6 +45,7 @@ def verify(out):
     run("-m","unittest","discover","-s","tests","-v",cwd=original)
     run("audit_wallet.py","--out",str(out/"reviewed"))
     run("rpc_evidence.py","--from-saved","evidence/rpc","--report",str(out/"reviewed"/"rpc-summary.json"))
+    run("verify_followup.py","--out",str(out/"reviewed"/"followup-summary.json"))
     run("-m","unittest","discover","-s","tests","-v")
     for saved in sorted((ROOT/"expected").iterdir()):
         need(saved.read_bytes()==(out/"reviewed"/saved.name).read_bytes(),f"Rebuilt review file differs: {saved.name}")
@@ -54,9 +55,10 @@ def verify(out):
     need(data["account_pairs_with_verified_alias"]==4 and data["account_pairs_with_rpc_event_match"]==4
          and data["account_pairs_with_rpc_event_mismatch"]==0 and data["account_block_pairs"]==37,
          "RPC balance coverage changed")
-    print("PASS: Five original and six reviewed outputs reproduced byte for byte.")
-    print("OBSERVED: Explorer 34/37 paired balances; direct RPC 4/37 available, 4/4 exact.")
-    print("OBSERVED: RPC returned 29/30 receipts; 132 state reads were pruned.")
+    print("PASS: Five original and seven reviewed outputs reproduced byte for byte.")
+    print("OBSERVED: Original Explorer 34/37 paired balances; original RPC 4/37 available, 4/4 exact.")
+    print("OBSERVED: Follow-up six transactions; 12/12 direct balance comparisons exact.")
+    print("OBSERVED: Original RPC 29/30 receipts; eight follow-up account-proof requests hit the proof window.")
     print("A pass checks saved data and calculations. It does not independently authenticate chain state.")
 
 

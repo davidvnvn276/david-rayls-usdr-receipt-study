@@ -13,15 +13,22 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [ubuntu-24.04, windows-2025]
+        include:
+          - os: ubuntu-24.04
+            python: '3.12.14'
+          - os: windows-2025
+            python: '3.13.11'
     runs-on: ${{ matrix.os }}
     timeout-minutes: 5
+    env:
+      PYTHONUTF8: '1'
+      PYTHONIOENCODING: 'utf-8'
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
         with:
           persist-credentials: false
       - uses: actions/setup-python@83679a892e2d95755f2dac6acb0bfd1e9ac5d548
         with:
-          python-version: '3.12.14'
+          python-version: ${{ matrix.python }}
       - name: Check the package and rebuild the saved evidence outputs
         run: python verify_review.py --out runs/ci

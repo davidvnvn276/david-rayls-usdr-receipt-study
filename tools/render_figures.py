@@ -12,6 +12,7 @@ import subprocess
 ROOT=Path(__file__).resolve().parents[1]
 RESULTS=json.loads((ROOT/"expected/review-summary.json").read_text(encoding="utf-8"))
 RPC=json.loads((ROOT/"expected/rpc-summary.json").read_text(encoding="utf-8"))
+FOLLOWUP=json.loads((ROOT/"expected/followup-summary.json").read_text(encoding="utf-8"))
 HERO=RESULTS["hero"]
 COUNT=RESULTS["counts"]
 ALL=RESULTS["aggregate"]
@@ -221,12 +222,12 @@ def value():
 
 def scope():
     t=Poster(2400,1410,"How far did the check go?",
-        "23 of 23 routes from one sending wallet reconciled with 174.114291 USDr in transfer-leg volume and 45.151340 USDr in calculated wallet debits. The RPC matched 29 receipts and 214 logs. Four of 37 state pairs were available and all four matched.")
+        "23 original calls from one sending wallet reconciled, and four original direct wallet balance pairs matched. A separate follow-up added eight exact balance pairs on two later same-route calls and four exact fee debits from four different zero-Value payers.")
     t.meta(96,94,"EVIDENCE COVERAGE  •  EXPLORER AND NODE")
     t.text(90,222,"How far did the check go?",100,bold=True,tracking=-2,width=1950)
-    t.text(96,291,"28 indexed transactions + 2 targeted controls",40,DIM,width=2020)
+    t.text(96,291,"The original receipt sample and the separate wallet follow-up.",40,DIM,width=2020)
     t.card(96,356,1193,888,INK,cut=36)
-    t.meta(140,423,"FEE ROUTE RECONCILIATION",LIME,29)
+    t.meta(140,423,"ORIGINAL FEE ROUTE RECONCILIATION",LIME,29)
     t.text(131,564,f'{COUNT["credit_calls"]} of {COUNT["credit_calls"]}',116,WHITE,True,False,-4,width=980)
     t.text(139,624,"Same payer and route · 9 destination EIDs",39,WHITE,width=1086)
     t.path("M140 671H1244","#676374",3)
@@ -239,21 +240,25 @@ def scope():
     t.text(432,1107,"Recorded movement includes",30,INK,True,width=750)
     t.text(433,1149,"forwarding and refunds.",32,INK,width=750)
     t.card(1332,356,973,888,LITE,VIOLET,3,36)
-    t.meta(1376,422,"DIRECT MAINNET RPC",VIOLET,30)
+    t.meta(1376,422,"ORIGINAL DIRECT MAINNET RPC",VIOLET,27)
     total=RPC["transaction_reads_verified"]
     n=RPC["receipts_verified"]
-    t.text(1368,545,f"{n} of {total}",94,bold=True,tracking=-3,width=861)
-    t.text(1376,611,f'Receipts matched · {RPC["event_logs_verified"]} raw logs',37,INK,width=875)
-    t.path("M1377 663H2260",VIOLET,2)
+    t.text(1376,516,f'{n} of {total} receipts matched · {RPC["event_logs_verified"]} logs',37,INK,True,width=874)
     a=RPC["complete_native_balance_pairs"]
     b=RPC["account_block_pairs"]
-    t.text(1368,793,f"{a} of {b}",94,bold=True,tracking=-3,width=861)
-    t.text(1376,849,"Complete historical balance pairs",37,INK,width=873)
-    t.text(1376,910,"All 4 matched. Other state was pruned.",32,DIM,width=875)
-    t.card(1377,987,879,183,WHITE,FINE,2,23)
-    t.meta(1414,1043,"SEPARATE EXPLORER BALANCE CHECK",VIOLET,25)
-    t.text(1411,1116,f'{COUNT["exact_pairs"]} of {b} matched  ·  3 open differences',37,INK,True,False,-.4,width=811)
-    t.footer("Destination delivery untested. No node state for the three indexed balance differences.","SAMPLE BOUNDARY")
+    t.text(1376,581,f"{a} of {b} balance pairs available and exact",36,INK,width=875)
+    t.path("M1377 643H2260",VIOLET,2)
+    t.meta(1376,713,"SEPARATE FOLLOW-UP",VIOLET,28)
+    new=FOLLOWUP["six_new_cases_complete_native_comparisons"]
+    t.text(1367,839,str(new),103,bold=True,tracking=-3,width=270)
+    t.text(1561,820,"exact balance comparisons",37,INK,True,width=692)
+    credits=sum(len(e["balances"]) for e in FOLLOWUP["separate_recent_routes"])
+    zero=len(FOLLOWUP["zero_value_cases"])
+    t.text(1376,932,f"{credits}  ·  Two later calls on the same bridge route",32,INK,width=880)
+    t.text(1376,999,f"{zero}  ·  Four zero-Value calls, four other payers",32,INK,width=880)
+    t.card(1376,1061,881,108,WHITE,FINE,2,18)
+    t.text(1402,1126,"One RPC endpoint. No state-root proof.",30,INK,True,width=827)
+    t.footer("Original indexed balances: 34 of 37 matched. The three exceptions remain unresolved.","SAMPLE BOUNDARY")
     return t
 
 

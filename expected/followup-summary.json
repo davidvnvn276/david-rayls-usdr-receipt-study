@@ -1,0 +1,493 @@
+{
+  "scope": "RPC observations compared to transaction receipts; no authenticated state root or independent provider.",
+  "chain_id": 72957,
+  "scan": {
+    "from_block": 14683981,
+    "to_block": 14733980,
+    "head_response_height": 14733980,
+    "logs": 73,
+    "transactions_with_matching_logs": 19,
+    "selection": "The two latest observed USDr-log transactions after the original capture. Chosen before reading balances."
+  },
+  "separate_recent_routes": [
+    {
+      "case": "followup-01",
+      "hash": "0x81d8c4d3dd5298dcadcf24873ea5327ee93d113b5dc6dea53d0111226c8b8a06",
+      "height": 14729950,
+      "parent_hash": "0xf8bc844bcc5b82a6d41d349013541739c7f93fc23771bf6881344469a7cecb23",
+      "block_hash": "0x859517bd600da86827cf7c5154b9543b4cd1324998edc1384135cdb6b21555f6",
+      "payer": "0xe37f7c80ced04c4f243c0fd04a5510d663cb88b5",
+      "block_author": "0xeecf1a05b55e27c19d999471376192880aaa78bc",
+      "unix_seconds": 1794999304,
+      "top_level_value_units": 2202726578739024000,
+      "network_fee_units": 21944286720000000,
+      "raw_receipt_logs": 8,
+      "usdr_transfer_logs": 4,
+      "refund_units": 508321518170544000,
+      "message_fee_units": 1694405060568480000,
+      "net_debit_units": 1716349347288480000,
+      "transfer_leg_sum_units": 6608179736217072000,
+      "destination_eid": 30374,
+      "packet_guid": "0x587fdd43737679180c6210dd1c0ac633d64f1199c6d09337edd2726556807fef",
+      "value_minus_floor_13_over_10_fee_units": 0,
+      "value_plus_gas_units": 2224670865459024000,
+      "balances": [
+        {
+          "address": "0x674843c06ff83502ddb4d37c2e09c01cda38cbc8",
+          "expected_delta_units": 0,
+          "native_parent_units": 164335056194692250,
+          "balanceOf_parent_units": 164335056194692250,
+          "native_inclusion_units": 164335056194692250,
+          "balanceOf_inclusion_units": 164335056194692250,
+          "observed_delta_units": 0,
+          "matches": true,
+          "errors": []
+        },
+        {
+          "address": "0x6f475642a6e85809b1c36fa62763669b1b48dd5b",
+          "expected_delta_units": 0,
+          "native_parent_units": 0,
+          "balanceOf_parent_units": 0,
+          "native_inclusion_units": 0,
+          "balanceOf_inclusion_units": 0,
+          "observed_delta_units": 0,
+          "matches": true,
+          "errors": []
+        },
+        {
+          "address": "0xc39161c743d0307eb9bcc9fef03eeb9dc4802de7",
+          "expected_delta_units": 1694405060568480000,
+          "native_parent_units": 291401133844078705281,
+          "balanceOf_parent_units": 291401133844078705281,
+          "native_inclusion_units": 293095538904647185281,
+          "balanceOf_inclusion_units": 293095538904647185281,
+          "observed_delta_units": 1694405060568480000,
+          "matches": true,
+          "errors": []
+        },
+        {
+          "address": "0xe37f7c80ced04c4f243c0fd04a5510d663cb88b5",
+          "expected_delta_units": -1716349347288480000,
+          "native_parent_units": 353645205331498566148,
+          "balanceOf_parent_units": 353645205331498566148,
+          "native_inclusion_units": 351928855984210086148,
+          "balanceOf_inclusion_units": 351928855984210086148,
+          "observed_delta_units": -1716349347288480000,
+          "matches": true,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "case": "followup-02",
+      "hash": "0xca4362cff32cb6517ff004c693484d6b98cd416f013c74d7a677cd1c054328bf",
+      "height": 14728392,
+      "parent_hash": "0x1a3b6bd75168cdf38d2ea82ede25bc57bea8b8cf6e3b0ae807b8fa3b4d3ac753",
+      "block_hash": "0x40d047cb12f95fc7f2f7acf31d8e2bb23a26891f4b8070bfb99ce2a386709ac4",
+      "payer": "0xe37f7c80ced04c4f243c0fd04a5510d663cb88b5",
+      "block_author": "0x17a9747596427f4960d5c494417ce6bf8b82bafe",
+      "unix_seconds": 1794997205,
+      "top_level_value_units": 2658684336525983565,
+      "network_fee_units": 21943457280000000,
+      "raw_receipt_logs": 8,
+      "usdr_transfer_logs": 4,
+      "refund_units": 613542539198303899,
+      "message_fee_units": 2045141797327679666,
+      "net_debit_units": 2067085254607679666,
+      "transfer_leg_sum_units": 7976053009577950695,
+      "destination_eid": 30333,
+      "packet_guid": "0x7cdd07de00b01bfe9f3b839ad151b45455cc0237a6cba50fd2474321b9b6eabb",
+      "value_minus_floor_13_over_10_fee_units": 0,
+      "value_plus_gas_units": 2680627793805983565,
+      "balances": [
+        {
+          "address": "0x674843c06ff83502ddb4d37c2e09c01cda38cbc8",
+          "expected_delta_units": 0,
+          "native_parent_units": 164335056194692250,
+          "balanceOf_parent_units": 164335056194692250,
+          "native_inclusion_units": 164335056194692250,
+          "balanceOf_inclusion_units": 164335056194692250,
+          "observed_delta_units": 0,
+          "matches": true,
+          "errors": []
+        },
+        {
+          "address": "0x6f475642a6e85809b1c36fa62763669b1b48dd5b",
+          "expected_delta_units": 0,
+          "native_parent_units": 0,
+          "balanceOf_parent_units": 0,
+          "native_inclusion_units": 0,
+          "balanceOf_inclusion_units": 0,
+          "observed_delta_units": 0,
+          "matches": true,
+          "errors": []
+        },
+        {
+          "address": "0xc39161c743d0307eb9bcc9fef03eeb9dc4802de7",
+          "expected_delta_units": 2045141797327679666,
+          "native_parent_units": 289355992046751025615,
+          "balanceOf_parent_units": 289355992046751025615,
+          "native_inclusion_units": 291401133844078705281,
+          "balanceOf_inclusion_units": 291401133844078705281,
+          "observed_delta_units": 2045141797327679666,
+          "matches": true,
+          "errors": []
+        },
+        {
+          "address": "0xe37f7c80ced04c4f243c0fd04a5510d663cb88b5",
+          "expected_delta_units": -2067085254607679666,
+          "native_parent_units": 355712290586106245814,
+          "balanceOf_parent_units": 355712290586106245814,
+          "native_inclusion_units": 353645205331498566148,
+          "balanceOf_inclusion_units": 353645205331498566148,
+          "observed_delta_units": -2067085254607679666,
+          "matches": true,
+          "errors": []
+        }
+      ]
+    }
+  ],
+  "zero_value_cases": [
+    {
+      "case": "alternate-01",
+      "hash": "0xc908fc4984fb3a337c6db440cd849f3b36bcc1b4e63876a9b91ef7954becdcee",
+      "height": 14734206,
+      "parent_hash": "0x096138b920daf1f12b05619540e081874bf0f9bb110534e73c89061c37cf1de9",
+      "block_hash": "0x8d09f00e421f32f82a538acc287203c5617c26c61ec14f85ac767f5b17027e85",
+      "payer": "0x8ae396ac3e65688b6495f2ac0c750264e1580fca",
+      "block_author": "0xfc182245c87ab48b6a10e36fd262790de73707af",
+      "unix_seconds": 1795005032,
+      "top_level_value_units": 0,
+      "network_fee_units": 2812656000000000,
+      "raw_receipt_logs": 1,
+      "usdr_transfer_logs": 0,
+      "explorer_method_label": "addToWhitelist",
+      "balance": {
+        "address": "0x8ae396ac3e65688b6495f2ac0c750264e1580fca",
+        "expected_delta_units": -2812656000000000,
+        "native_parent_units": 1000000000000000000,
+        "balanceOf_parent_units": 1000000000000000000,
+        "native_inclusion_units": 997187344000000000,
+        "balanceOf_inclusion_units": 997187344000000000,
+        "observed_delta_units": -2812656000000000,
+        "matches": true,
+        "errors": []
+      }
+    },
+    {
+      "case": "alternate-02",
+      "hash": "0x61c3009dcc9f07cbfe0881c04c65db01c731d32b07e527cab4674583e04caf06",
+      "height": 14734141,
+      "parent_hash": "0xc537aa5dba100b597462725648f3bcd7ff289f221fb1e42dcef0b1cfc682e211",
+      "block_hash": "0x3d409be3ebe58d8b55e9ecbdac511d15205109aabc27fe6bbd04f100d2a9c8f1",
+      "payer": "0x4d76d208692c1b1c22d77350b89396d76c947e22",
+      "block_author": "0xc2afe610a7cecc44ef8604fe9421271fe2990fe6",
+      "unix_seconds": 1795004944,
+      "top_level_value_units": 0,
+      "network_fee_units": 5166259200000000,
+      "raw_receipt_logs": 3,
+      "usdr_transfer_logs": 0,
+      "explorer_method_label": null,
+      "balance": {
+        "address": "0x4d76d208692c1b1c22d77350b89396d76c947e22",
+        "expected_delta_units": -5166259200000000,
+        "native_parent_units": 952708337118088645,
+        "balanceOf_parent_units": 952708337118088645,
+        "native_inclusion_units": 947542077918088645,
+        "balanceOf_inclusion_units": 947542077918088645,
+        "observed_delta_units": -5166259200000000,
+        "matches": true,
+        "errors": []
+      }
+    },
+    {
+      "case": "alternate-03",
+      "hash": "0xc8644976f4b001317b534b2fd38b7f859ee5521ab33cfba388e793bbd17865fe",
+      "height": 14734112,
+      "parent_hash": "0x9a7d5d6fd67f53a4e5bce437470f843caf54179467448acf140329bf3e50b4de",
+      "block_hash": "0x0b2c7d59d90ef0a4b8d8158dbe8c18cdb616ed221e085634a916a7b0d1232c49",
+      "payer": "0x16b30247b09e7d0e519b79e1a71cf8bcecc139e1",
+      "block_author": "0xeecf1a05b55e27c19d999471376192880aaa78bc",
+      "unix_seconds": 1795004905,
+      "top_level_value_units": 0,
+      "network_fee_units": 7653504000000000,
+      "raw_receipt_logs": 4,
+      "usdr_transfer_logs": 0,
+      "explorer_method_label": "settleDeposit",
+      "balance": {
+        "address": "0x16b30247b09e7d0e519b79e1a71cf8bcecc139e1",
+        "expected_delta_units": -7653504000000000,
+        "native_parent_units": 994794304000000000,
+        "balanceOf_parent_units": 994794304000000000,
+        "native_inclusion_units": 987140800000000000,
+        "balanceOf_inclusion_units": 987140800000000000,
+        "observed_delta_units": -7653504000000000,
+        "matches": true,
+        "errors": []
+      }
+    },
+    {
+      "case": "alternate-04",
+      "hash": "0x79e7c02c7cf9225396261942a2b70957a5622facc3ff308322cbe4ffbbb702b0",
+      "height": 14734108,
+      "parent_hash": "0x822ad3f8eea8508dcf29f4ebc98ed5216aab9999c4a2cbd9e5336ee8cb0721c4",
+      "block_hash": "0xfc65dcc458f1ba79d5ba6369052ac196e6d64920158d220bdfa22fc9ec6475f2",
+      "payer": "0x510006e37f44560d60fa293ae306b454e7f14c58",
+      "block_author": "0xba74449591e403e012351095b566cf15417c2930",
+      "unix_seconds": 1795004900,
+      "top_level_value_units": 0,
+      "network_fee_units": 6408528000000000,
+      "raw_receipt_logs": 1,
+      "usdr_transfer_logs": 0,
+      "explorer_method_label": "updateNewTotalAssets",
+      "balance": {
+        "address": "0x510006e37f44560d60fa293ae306b454e7f14c58",
+        "expected_delta_units": -6408528000000000,
+        "native_parent_units": 1000000000000000000,
+        "balanceOf_parent_units": 1000000000000000000,
+        "native_inclusion_units": 993591472000000000,
+        "balanceOf_inclusion_units": 993591472000000000,
+        "observed_delta_units": -6408528000000000,
+        "matches": true,
+        "errors": []
+      }
+    }
+  ],
+  "older_contrasts_repeated": [
+    {
+      "case": "contrast-swap",
+      "hash": "0x578c41d7ad11dd2befb48f87e5df881e2827d2f4dc4a879196b1b82083cf6a31",
+      "height": 14687910,
+      "parent_hash": "0xa3d52142ac03237fe6bc9a84316a9ab97b2939b30b327f85dc7900e87b822d64",
+      "block_hash": "0x993c609a7695e1b23c19d480e41acc3699f33967db2043f0ca538a8077b684a4",
+      "payer": "0x00025d77f296c06803efd0de150ad1e10b56fb11",
+      "block_author": "0x080857747a9baa9f53a68a20cd1e13b691641bc7",
+      "unix_seconds": 1794942694,
+      "top_level_value_units": 0,
+      "network_fee_units": 12409056000000000,
+      "raw_receipt_logs": 4,
+      "usdr_transfer_logs": 1,
+      "balances": [
+        {
+          "address": "0x00025d77f296c06803efd0de150ad1e10b56fb11",
+          "expected_delta_units": 41664703848045526158,
+          "native_parent_units": null,
+          "balanceOf_parent_units": null,
+          "native_inclusion_units": null,
+          "balanceOf_inclusion_units": null,
+          "observed_delta_units": null,
+          "matches": null,
+          "errors": [
+            {
+              "stage": "parent",
+              "method": "eth_getBalance",
+              "code": -32603,
+              "message": "state at block #14687910 is pruned"
+            },
+            {
+              "stage": "parent",
+              "method": "eth_call",
+              "code": -32603,
+              "message": "state at block #14687910 is pruned"
+            },
+            {
+              "stage": "inclusion",
+              "method": "eth_getBalance",
+              "code": -32603,
+              "message": "state at block #14687911 is pruned"
+            },
+            {
+              "stage": "inclusion",
+              "method": "eth_call",
+              "code": -32603,
+              "message": "state at block #14687911 is pruned"
+            }
+          ]
+        },
+        {
+          "address": "0x07bebed47383e1bf3ec4f75eab2c65a0eff00fa1",
+          "expected_delta_units": -41677112904045526158,
+          "native_parent_units": null,
+          "balanceOf_parent_units": null,
+          "native_inclusion_units": null,
+          "balanceOf_inclusion_units": null,
+          "observed_delta_units": null,
+          "matches": null,
+          "errors": [
+            {
+              "stage": "parent",
+              "method": "eth_getBalance",
+              "code": -32603,
+              "message": "state at block #14687910 is pruned"
+            },
+            {
+              "stage": "parent",
+              "method": "eth_call",
+              "code": -32603,
+              "message": "state at block #14687910 is pruned"
+            },
+            {
+              "stage": "inclusion",
+              "method": "eth_getBalance",
+              "code": -32603,
+              "message": "state at block #14687911 is pruned"
+            },
+            {
+              "stage": "inclusion",
+              "method": "eth_call",
+              "code": -32603,
+              "message": "state at block #14687911 is pruned"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case": "archive-native",
+      "hash": "0x4d39b36c5c4e12cdc79eccabffa3acd7e50213a3e651c39377d59de5e338ee80",
+      "height": 14676417,
+      "parent_hash": "0x985ee6dfa8cb2939a12f24ccdddd991b36c2c2bfc93cff174107ff2a6e2c2be2",
+      "block_hash": "0x330bea7610dda102c8160cf31d4035b619123f9fc60fa1bea728de628fad4524",
+      "payer": "0x2165b3dc1060123485fb20f1d59784b886874735",
+      "block_author": "0xeecf1a05b55e27c19d999471376192880aaa78bc",
+      "unix_seconds": 1794927303,
+      "top_level_value_units": 4000000000000000000,
+      "network_fee_units": 1209600000000000,
+      "raw_receipt_logs": 1,
+      "usdr_transfer_logs": 1,
+      "balances": [
+        {
+          "address": "0x2ed7120f6727ab95f1eb0e63581300716d79eadb",
+          "expected_delta_units": 4000000000000000000,
+          "native_parent_units": null,
+          "balanceOf_parent_units": null,
+          "native_inclusion_units": null,
+          "balanceOf_inclusion_units": null,
+          "observed_delta_units": null,
+          "matches": null,
+          "errors": [
+            {
+              "stage": "parent",
+              "method": "eth_getBalance",
+              "code": -32603,
+              "message": "state at block #14676417 is pruned"
+            },
+            {
+              "stage": "parent",
+              "method": "eth_call",
+              "code": -32603,
+              "message": "state at block #14676417 is pruned"
+            },
+            {
+              "stage": "inclusion",
+              "method": "eth_getBalance",
+              "code": -32603,
+              "message": "state at block #14676418 is pruned"
+            },
+            {
+              "stage": "inclusion",
+              "method": "eth_call",
+              "code": -32603,
+              "message": "state at block #14676418 is pruned"
+            }
+          ]
+        },
+        {
+          "address": "0x2165b3dc1060123485fb20f1d59784b886874735",
+          "expected_delta_units": -4001209600000000000,
+          "native_parent_units": null,
+          "balanceOf_parent_units": null,
+          "native_inclusion_units": null,
+          "balanceOf_inclusion_units": null,
+          "observed_delta_units": null,
+          "matches": null,
+          "errors": [
+            {
+              "stage": "parent",
+              "method": "eth_getBalance",
+              "code": -32603,
+              "message": "state at block #14676417 is pruned"
+            },
+            {
+              "stage": "parent",
+              "method": "eth_call",
+              "code": -32603,
+              "message": "state at block #14676417 is pruned"
+            },
+            {
+              "stage": "inclusion",
+              "method": "eth_getBalance",
+              "code": -32603,
+              "message": "state at block #14676418 is pruned"
+            },
+            {
+              "stage": "inclusion",
+              "method": "eth_call",
+              "code": -32603,
+              "message": "state at block #14676418 is pruned"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "unavailable_account_proofs": [
+    {
+      "case": "hero",
+      "height": 14723933,
+      "address": "0xe37f7c80ced04c4f243c0fd04a5510d663cb88b5",
+      "code": -32602,
+      "message": "distance to target block exceeds maximum proof window"
+    },
+    {
+      "case": "hero",
+      "height": 14723934,
+      "address": "0xe37f7c80ced04c4f243c0fd04a5510d663cb88b5",
+      "code": -32602,
+      "message": "distance to target block exceeds maximum proof window"
+    },
+    {
+      "case": "followup-01",
+      "height": 14729949,
+      "address": "0xe37f7c80ced04c4f243c0fd04a5510d663cb88b5",
+      "code": -32602,
+      "message": "distance to target block exceeds maximum proof window"
+    },
+    {
+      "case": "followup-01",
+      "height": 14729950,
+      "address": "0xe37f7c80ced04c4f243c0fd04a5510d663cb88b5",
+      "code": -32602,
+      "message": "distance to target block exceeds maximum proof window"
+    },
+    {
+      "case": "followup-02",
+      "height": 14728391,
+      "address": "0xe37f7c80ced04c4f243c0fd04a5510d663cb88b5",
+      "code": -32602,
+      "message": "distance to target block exceeds maximum proof window"
+    },
+    {
+      "case": "followup-02",
+      "height": 14728392,
+      "address": "0xe37f7c80ced04c4f243c0fd04a5510d663cb88b5",
+      "code": -32602,
+      "message": "distance to target block exceeds maximum proof window"
+    },
+    {
+      "case": "alternate-01",
+      "height": 14734205,
+      "address": "0x8ae396ac3e65688b6495f2ac0c750264e1580fca",
+      "code": -32602,
+      "message": "distance to target block exceeds maximum proof window"
+    },
+    {
+      "case": "alternate-01",
+      "height": 14734206,
+      "address": "0x8ae396ac3e65688b6495f2ac0c750264e1580fca",
+      "code": -32602,
+      "message": "distance to target block exceeds maximum proof window"
+    }
+  ],
+  "six_new_cases_complete_native_comparisons": 12
+}
